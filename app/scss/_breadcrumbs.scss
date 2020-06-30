@@ -1,0 +1,29 @@
+.breadcrumb {
+  margin: unset;
+  padding: unset;
+  background-color: unset;
+  &-item {
+      font-size: 14px;
+      font-weight: 400;
+      color: $light-gray;      
+      &+{
+          .breadcrumb-item::before{
+            color: $light-gray;
+            content: ">";
+          }
+      }
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      color: $light-gray;
+      text-decoration: none;
+      transition: 0.3s;
+      &:hover{
+          color:$primary;
+      }
+    }
+    &.active{
+        color:$primary;
+    }
+  }
+}

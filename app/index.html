@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <title>Trucksite</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <!-- Header   -->
+    <header>
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="" class="menu-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12H21" stroke="#2356A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 6H21" stroke="#2356A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 18H21" stroke="#2356A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
+          <a href="#" class="logo">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+          <nav id="mySidenav">
+            <div class="sidenav__header">
+              <a href="#" class="sidenav__logo"><img src="img/logo.svg" alt=""></a>
+              <a href="#" class="sidenav__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="#85878B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6L18 18" stroke="#85878B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+              </a>
+            </div>
+            <ul>
+              <li><a href="#">Inventory</a></li>
+              <li><a href="#">Financing</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header__wrap-btn">
+            <a href="tel:(916) 347-9828" class="header__phone"><span>(916) 347-9828</span></a>
+            <a href="#" class="header__search">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2267 11.2268C9.68061 12.7729 7.17389 12.7729 5.62779 11.2268C4.08169 9.68069 4.08169 7.17398 5.62779 5.62788C7.17389 4.08179 9.68061 4.08179 11.2267 5.62788C12.7728 7.17398 12.7728 9.68069 11.2267 11.2268ZM11.4918 13.7904C11.4042 13.7028 11.2695 13.6681 11.1595 13.7249C8.9169 14.8822 6.09347 14.5209 4.21357 12.641C1.88643 10.3139 1.88643 6.54081 4.21357 4.21367C6.54072 1.88653 10.3138 1.88653 12.6409 4.21367C14.8331 6.40589 14.9602 9.8812 13.0222 12.2222C13.0135 12.2328 13.0143 12.2484 13.024 12.2581L16.0885 15.3226C16.5116 15.7457 16.5116 16.4318 16.0885 16.8549C15.6654 17.278 14.9794 17.278 14.5562 16.8549L11.4918 13.7904Z" fill="#2356A5"/>
+                </svg>              
+            </a>            
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main screen -->
+    <div class="main-screen">
+      <div class="container">
+        <div class="main-screen__content">
+          <span>CaliforniaClean®</span>
+          <h1>Ex-Government<br> Trucks & Equipment</h1>
+          <div class="input-groupe">
+            <input type="text" placeholder="Search our Inventory" />
+            <button>
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2267 11.2268C9.68061 12.7729 7.17389 12.7729 5.62779 11.2268C4.08169 9.68069 4.08169 7.17398 5.62779 5.62788C7.17389 4.08179 9.68061 4.08179 11.2267 5.62788C12.7728 7.17398 12.7728 9.68069 11.2267 11.2268ZM11.4918 13.7904C11.4042 13.7028 11.2695 13.6681 11.1595 13.7249C8.9169 14.8822 6.09347 14.5209 4.21357 12.641C1.88643 10.3139 1.88643 6.54081 4.21357 4.21367C6.54072 1.88653 10.3138 1.88653 12.6409 4.21367C14.8331 6.40589 14.9602 9.8812 13.0222 12.2222C13.0135 12.2328 13.0143 12.2484 13.024 12.2581L16.0885 15.3226C16.5116 15.7457 16.5116 16.4318 16.0885 16.8549C15.6654 17.278 14.9794 17.278 14.5562 16.8549L11.4918 13.7904Z" fill="#333333"/>
+                </svg>              
+            </button>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <!-- Popular categories -->
+    <div class="popular-categories">
+      <div class="container">
+        <h2 class="title text-center title-size-2">Popular Categories</h2>
+        <div class="popular-categories__slider">
+          <div>
+            <a href="#" class="popular-categories__link">
+              <div class="popular-categories__icon">
+                <img src="img/sweeper.svg" alt="" />
+              </div>
+              <span class="popular-categories__item">Street Sweepers</span>
+              <span class="popular-categories__available">45 Available</span>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="popular-categories__link">
+              <div class="popular-categories__icon">
+                <img src="img/garbage.svg" alt="" />
+              </div>
+              <span class="popular-categories__item">Garbage Trucks</span>
+              <span class="popular-categories__available">5 Available</span>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="popular-categories__link">
+              <div class="popular-categories__icon">
+                <img src="img/sewer.svg" alt="" />
+              </div>
+              <span class="popular-categories__item">Sewer Trucks</span>
+              <span class="popular-categories__available">6 Available</span>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="popular-categories__link">
+              <div class="popular-categories__icon">
+                <img src="img/bucket.svg" alt="" />
+              </div>
+              <span class="popular-categories__item">Bucket Trucks</span>
+              <span class="popular-categories__available">6 Available</span>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="popular-categories__link">
+              <div class="popular-categories__icon">
+                <img src="img/fire.svg" alt="" />
+              </div>
+              <span class="popular-categories__item">Fire Trucks</span>
+              <span class="popular-categories__available">61 Available</span>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="popular-categories__link">
+              <div class="popular-categories__icon">
+                <img src="img/utility.svg" alt="" />
+              </div>
+              <span class="popular-categories__item">Utility Trucks</span>
+              <span class="popular-categories__available">41 Available</span>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="popular-categories__link">
+              <div class="popular-categories__icon">
+                <img src="img/cab.svg" alt="" />
+              </div>
+              <span class="popular-categories__item">Cab and Chassis</span>
+              <span class="popular-categories__available">141 Available</span>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="popular-categories__link">
+              <div class="popular-categories__icon">
+                <img src="img/cab.svg" alt="" />
+              </div>
+              <span class="popular-categories__item">Cab and Chassis</span>
+              <span class="popular-categories__available">141 Available</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featured Trucks -->
+    <div class="featured-trucks">
+      <div class="container">
+        <h2 class="title text-center title-size-2">Featured Trucks</h2>
+        <div class="trucks__slider">
+          <div class="trucks-slide">
+            <a href="#">
+              <div class="item__img">
+                <img src="img/slide-image3.png" alt="" />
+                <div class="item__features">
+                  <span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6975 2.35403H15.2335C16.1135 2.35403 16.8335 3.07403 16.8335 3.95403V13.554C16.8335 14.434 16.1135 15.154 15.2335 15.154H2.4335C1.5535 15.154 0.833496 14.434 0.833496 13.554V3.95403C0.833496 3.07403 1.5535 2.35403 2.4335 2.35403H4.9695L6.4335 0.754028H11.2335L12.6975 2.35403ZM15.2335 13.554V3.95401H11.9935L10.5295 2.35401H7.13749L5.67349 3.95401H2.43349V13.554H15.2335ZM8.83349 4.75401C6.62549 4.75401 4.83349 6.54601 4.83349 8.75401C4.83349 10.962 6.62549 12.754 8.83349 12.754C11.0415 12.754 12.8335 10.962 12.8335 8.75401C12.8335 6.54601 11.0415 4.75401 8.83349 4.75401ZM6.4335 8.75405C6.4335 10.074 7.5135 11.154 8.8335 11.154C10.1535 11.154 11.2335 10.074 11.2335 8.75405C11.2335 7.43405 10.1535 6.35405 8.8335 6.35405C7.5135 6.35405 6.4335 7.43405 6.4335 8.75405Z" fill="#222D48"/>
+                    </svg>
+                    </span>
+                  <span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.31359 0.78833C4.15736 0.78833 0.78418 4.16151 0.78418 8.31774C0.78418 12.474 4.15736 15.8472 8.31359 15.8472C12.4698 15.8472 15.843 12.474 15.843 8.31774C15.843 4.16151 12.4698 0.78833 8.31359 0.78833ZM6.8077 11.706L11.3254 8.31776L6.8077 4.92952V11.706ZM2.29006 8.31772C2.29006 11.6382 4.99312 14.3413 8.31359 14.3413C11.6341 14.3413 14.3371 11.6382 14.3371 8.31772C14.3371 4.99725 11.6341 2.2942 8.31359 2.2942C4.99312 2.2942 2.29006 4.99725 2.29006 8.31772Z" fill="#222D48"/>
+                    </svg>
+                    </span>
+                </div>
+              </div>
+              <span>2004 Isuzu NQR Tymco 435 Air Street Sweeper</span>
+            </a>
+          </div>
+          <div class="trucks-slide">
+            <a href="#">
+              <div class="item__img">
+                <img src="img/slide-image1.png" alt="" />
+                <div class="item__features">
+                  <span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6975 2.35403H15.2335C16.1135 2.35403 16.8335 3.07403 16.8335 3.95403V13.554C16.8335 14.434 16.1135 15.154 15.2335 15.154H2.4335C1.5535 15.154 0.833496 14.434 0.833496 13.554V3.95403C0.833496 3.07403 1.5535 2.35403 2.4335 2.35403H4.9695L6.4335 0.754028H11.2335L12.6975 2.35403ZM15.2335 13.554V3.95401H11.9935L10.5295 2.35401H7.13749L5.67349 3.95401H2.43349V13.554H15.2335ZM8.83349 4.75401C6.62549 4.75401 4.83349 6.54601 4.83349 8.75401C4.83349 10.962 6.62549 12.754 8.83349 12.754C11.0415 12.754 12.8335 10.962 12.8335 8.75401C12.8335 6.54601 11.0415 4.75401 8.83349 4.75401ZM6.4335 8.75405C6.4335 10.074 7.5135 11.154 8.8335 11.154C10.1535 11.154 11.2335 10.074 11.2335 8.75405C11.2335 7.43405 10.1535 6.35405 8.8335 6.35405C7.5135 6.35405 6.4335 7.43405 6.4335 8.75405Z" fill="#222D48"/>
+                    </svg>
+                    </span>
+                  <span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.31359 0.78833C4.15736 0.78833 0.78418 4.16151 0.78418 8.31774C0.78418 12.474 4.15736 15.8472 8.31359 15.8472C12.4698 15.8472 15.843 12.474 15.843 8.31774C15.843 4.16151 12.4698 0.78833 8.31359 0.78833ZM6.8077 11.706L11.3254 8.31776L6.8077 4.92952V11.706ZM2.29006 8.31772C2.29006 11.6382 4.99312 14.3413 8.31359 14.3413C11.6341 14.3413 14.3371 11.6382 14.3371 8.31772C14.3371 4.99725 11.6341 2.2942 8.31359 2.2942C4.99312 2.2942 2.29006 4.99725 2.29006 8.31772Z" fill="#222D48"/>
+                    </svg>
+                    </span>
+                </div>                
+              </div>
+              <span>2005 Blue Bird Express 4500 48 Passenger Coach Bus</span>
+            </a>
+          </div>
+          <div class="trucks-slide">
+            <a href="#">
+              <div class="item__img">
+                <img src="img/slide-image2.png" alt="" />
+                <div class="item__features">
+                  <span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6975 2.35403H15.2335C16.1135 2.35403 16.8335 3.07403 16.8335 3.95403V13.554C16.8335 14.434 16.1135 15.154 15.2335 15.154H2.4335C1.5535 15.154 0.833496 14.434 0.833496 13.554V3.95403C0.833496 3.07403 1.5535 2.35403 2.4335 2.35403H4.9695L6.4335 0.754028H11.2335L12.6975 2.35403ZM15.2335 13.554V3.95401H11.9935L10.5295 2.35401H7.13749L5.67349 3.95401H2.43349V13.554H15.2335ZM8.83349 4.75401C6.62549 4.75401 4.83349 6.54601 4.83349 8.75401C4.83349 10.962 6.62549 12.754 8.83349 12.754C11.0415 12.754 12.8335 10.962 12.8335 8.75401C12.8335 6.54601 11.0415 4.75401 8.83349 4.75401ZM6.4335 8.75405C6.4335 10.074 7.5135 11.154 8.8335 11.154C10.1535 11.154 11.2335 10.074 11.2335 8.75405C11.2335 7.43405 10.1535 6.35405 8.8335 6.35405C7.5135 6.35405 6.4335 7.43405 6.4335 8.75405Z" fill="#222D48"/>
+                    </svg>
+                    </span>
+                </div>                
+              </div>
+              <span>2011 International 7400 Amrep AMRO-H-22 Roll Off Truck</span>
+            </a>
+          </div>
+          <div class="trucks-slide">
+            <a href="#">
+              <div class="item__img">
+                <img src="img/slide-image2.png" alt="" />
+                <div class="item__features">
+                  <span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6975 2.35403H15.2335C16.1135 2.35403 16.8335 3.07403 16.8335 3.95403V13.554C16.8335 14.434 16.1135 15.154 15.2335 15.154H2.4335C1.5535 15.154 0.833496 14.434 0.833496 13.554V3.95403C0.833496 3.07403 1.5535 2.35403 2.4335 2.35403H4.9695L6.4335 0.754028H11.2335L12.6975 2.35403ZM15.2335 13.554V3.95401H11.9935L10.5295 2.35401H7.13749L5.67349 3.95401H2.43349V13.554H15.2335ZM8.83349 4.75401C6.62549 4.75401 4.83349 6.54601 4.83349 8.75401C4.83349 10.962 6.62549 12.754 8.83349 12.754C11.0415 12.754 12.8335 10.962 12.8335 8.75401C12.8335 6.54601 11.0415 4.75401 8.83349 4.75401ZM6.4335 8.75405C6.4335 10.074 7.5135 11.154 8.8335 11.154C10.1535 11.154 11.2335 10.074 11.2335 8.75405C11.2335 7.43405 10.1535 6.35405 8.8335 6.35405C7.5135 6.35405 6.4335 7.43405 6.4335 8.75405Z" fill="#222D48"/>
+                    </svg>
+                    </span>
+                  <span><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.31359 0.78833C4.15736 0.78833 0.78418 4.16151 0.78418 8.31774C0.78418 12.474 4.15736 15.8472 8.31359 15.8472C12.4698 15.8472 15.843 12.474 15.843 8.31774C15.843 4.16151 12.4698 0.78833 8.31359 0.78833ZM6.8077 11.706L11.3254 8.31776L6.8077 4.92952V11.706ZM2.29006 8.31772C2.29006 11.6382 4.99312 14.3413 8.31359 14.3413C11.6341 14.3413 14.3371 11.6382 14.3371 8.31772C14.3371 4.99725 11.6341 2.2942 8.31359 2.2942C4.99312 2.2942 2.29006 4.99725 2.29006 8.31772Z" fill="#222D48"/>
+                    </svg>
+                    </span>
+                </div>                
+              </div>
+              <span>2004 Isuzu NQR Tymco 435 Air Street Sweeper</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Advantages -->
+    <div class="advantages">
+      <div class="container">
+        <div class="advantages__item">
+          <div class="left">
+            <h2 class="title">Finance it, quickly</h2>
+            <ul>
+              <li><img src="img/timer.svg" alt=""> 20 minute Approval</li>
+              <li><img src="img/monetization.svg" alt=""> Loans up to 500k</li>
+              <li><img src="img/person.svg" alt=""> Personal & commercial loans</li>
+            </ul>
+            <div class="wrap-btn">
+              <a href="" class="btn secondary-btn">Apply Now</a>
+              <span>Only takes 5 minutes</span>              
+            </div>
+          </div>
+          <div class="right">
+            <img src="img/img.png" alt="">
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="left">
+            <h2 class="title">We’ll ship anywhere,<br> painlessly</h2>
+            <ul>
+              <li><img src="img/vector.svg" alt=""> All shipments are insured</li>
+              <li><img src="img/vector.svg" alt=""> Competitive pricing</li>
+            </ul>
+            <div class="wrap-btn">
+              <a href="" class="btn secondary-btn">shipping options</a>
+            </div>
+          </div>
+          <div class="right">
+            <img src="img/img.png" alt="">
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="left">
+            <h2 class="title">Wide range of choice</h2>
+            <p>Each of our trucks has been handpicked from county, city, government, and other reputable organizations</p>
+            <div class="wrap-btn">
+              <a href="" class="btn secondary-btn">Our Inventory</a>
+            </div>
+          </div>
+          <div class="right">
+            <img src="img/img.png" alt="">
+          </div>
+        </div>                
+      </div>
+    </div>
+    <!-- Testimonials -->
+    <div class="testimonials">
+      <div class="container">
+        <div class="testimonials__slider">
+          <div>
+            <p class="testimonials__text">
+              “Roman was great, we got a great deal on a new fire engine for our
+              department. The staff was friendly and helpful, we will be
+              purchasing more equipment in the future. Thanks again.”
+            </p>
+            <span class="testimonials__author"
+              >James Micono, Albuquerque, NM</span
+            >
+          </div>
+          <div>
+            <p class="testimonials__text">
+              “Roman was great, we got a great deal on a new fire engine for our
+              department. The staff was friendly and helpful, we will be
+              purchasing more equipment in the future. Thanks again.”
+            </p>
+            <span class="testimonials__author"
+              >James Micono, Albuquerque, NM</span
+            >
+          </div>
+          <div>
+            <p class="testimonials__text">
+              “Roman was great, we got a great deal on a new fire engine for our
+              department. The staff was friendly and helpful, we will be
+              purchasing more equipment in the future. Thanks again.”
+            </p>
+            <span class="testimonials__author"
+              >James Micono, Albuquerque, NM</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Questions -->
+    <div class="questions">
+      <div class="container">
+        <h2 class="title text-center title-size-1">Frequently asked questions</h2>
+        <div class="questions__accordion" id="accordion">
+          <div class="questions__item">
+            <div class="questions__header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h2>Where does our inventory come from? <i class="fas fa-angle-down rotate-icon"></i></h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="questions__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <div class="questions__header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <h2>How did Trucksite start?</h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="questions__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          
+          <div class="questions__item">
+            <div class="questions__header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <h2>How long does it take to deliver a truck?</h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="questions__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+                   
+          <div class="questions__item">
+            <div class="questions__header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <h2> Do you offer an extended warranty?</h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="questions__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          
+          <div class="questions__item">
+            <div class="questions__header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+              <h2>Do you ship internationally?</h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="questions__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>          
+          
+          <div class="questions__item">
+            <div class="questions__header" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+              <h2> How can I get help with repairs?</h2>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+              <div class="questions__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>   
+          
+          <div class="questions__item">
+            <div class="questions__header" id="headingSeven" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+              <h2>Can I trade in a truck I currently own?</h2>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+              <div class="questions__body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>            
+        </div>
+        <div class="questions__help">
+          <div class="questions__help-wrapper">
+            <span>Questions? We can help you answer them.<a href="">Contact Us</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Family owned and operated -->
+    <div class="family-owned">
+      <div class="container">
+        <h2 class="title text-center title-size-1">Family owned and operated</h2>
+        <img src="img/owned-img.png" alt="">
+        <a href="" class="btn secondary-btn">Learn More about us</a>
+      </div>
+    </div>
+    <!-- What Is CaliforniaClean®? -->
+    <div class="california-clean">
+      <div class="container">
+        <h2 class="title text-center title-size-1">What Is CaliforniaClean®?</h2>
+        <p>CaliforniaClean® means the truck has seen little to no road salt, chemicals or snow, and is devoid<br> of rust damage. <a href="#">Learn More</a></p>
+      </div>
+    </div>
+    <!-- Footer   -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer__item footer-menu">
+            <h4 class="subtitle">Menu</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">All Inventory </a></li>
+              <li><a href="#">About Us </a></li>
+              <li><a href="#">California Clean</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Financing</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Contact Us </a></li>
+              <li><a href="#">Blog </a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer__item footer-contacts">
+            <h4 class="subtitle">Contact Us</h4>
+            <a href="tel:(916) 347-9828">(916) 347-9828</a>
+            <p>1317 Vinci Ave, Sacramento, CA 95838</p>
+          </div>
+          <div class="footer__item footer-social">
+            <h4 class="subtitle">Social Media</h4>
+            <p>
+              Follow us on social media to find out the latest updates about
+              Trucksite
+            </p>
+            <ul>
+              <li><a href="#"><img src="img/brands-and-logotypes.svg" alt=""></a></li>
+              <li><a href="#"><img src="img/social-network.svg" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="footer__item footer-newsletter">
+            <h4 class="subtitle">Newsletter</h4>
+            <p>Sign up to receive the latest inventory updates and deals.</p>
+            <a href="" class="btn secondary-btn">Subscribe</a>
+          </div>
+          <div class="footer__bottom">
+            <a href="#"><img src="img/footer-logo.svg" alt="" /></a
+            ><span
+              >Copyright © 2020 Truck Site. All Rights Reserved.
+              <a href="">Terms of Use</a> | <a href="#">Privacy Policy</a></span
+            >
+          </div>          
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

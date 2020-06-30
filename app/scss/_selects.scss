@@ -1,0 +1,23 @@
+.dropdown {
+  &.bootstrap-select {
+    width: auto !important;
+    button {
+      padding: unset;
+      color: $primary !important;
+      background-color: unset !important;
+      border: unset !important;
+      outline: unset !important;
+      text-transform: capitalize;
+      &:active,
+      &:hover,
+      &:focus {
+        border: unset !important;
+        outline: unset !important;
+        box-shadow: unset!important;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

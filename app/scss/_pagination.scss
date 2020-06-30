@@ -1,0 +1,27 @@
+.pagination{
+    margin: unset;
+    padding: unset;
+    .page{
+        &-item{
+            margin:0 3px;
+            &.active{
+                .page-link{
+                    color: $primary;
+                    background: rgba($primary,0.1);
+                }
+            }
+        }
+        &-link{
+            font-size: 14px;
+            font-weight: 500;
+            color:$dark-blue;
+            padding: 6px 12px;
+            border-radius: 6px;
+            border:unset;
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+}
