@@ -66,8 +66,8 @@ $('.trucks__slider').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     },
     {
@@ -89,35 +89,7 @@ $('.testimonials__slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
+  slidesToScroll: 1
 });
 
 $('.slider-for').slick({
@@ -139,13 +111,15 @@ $('.slider-nav').slick({
 
 //Menu
 
+let sideNav = document.getElementById("mySidenav");
+
 $('.menu-btn').on('click', function(e){
   e.preventDefault();
-  document.getElementById("mySidenav").style.left = "0px";
-  $('body').addClass('disable');
+  sideNav.style.left = "0px";
+  $('body').addClass('disable overlay');
 });
 $('.sidenav__close').on('click', function(e){
   e.preventDefault();
-  document.getElementById("mySidenav").style.left = "-250px";
-  $('body').removeClass('disable');
+  sideNav.style.left = "-250px";
+  $('body').removeClass('disable overlay');
 });
