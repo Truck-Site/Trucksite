@@ -14,10 +14,26 @@
     <header>
       <div class="container">
         <div class="header__wrapper">
+          <a href="" class="menu-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12H21" stroke="#2356A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 6H21" stroke="#2356A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 18H21" stroke="#2356A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
           <a href="#" class="logo">
             <img src="img/logo.svg" alt="logo" />
           </a>
-          <nav>
+          <nav id="mySidenav">
+            <div class="sidenav__header">
+              <a href="#" class="sidenav__logo"><img src="img/logo.svg" alt=""></a>
+              <a href="#" class="sidenav__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="#85878B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6L18 18" stroke="#85878B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+              </a>
+            </div>
             <ul>
               <li><a href="#">Inventory</a></li>
               <li><a href="#">Financing</a></li>
@@ -28,12 +44,14 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
-          <a href="tel:(916) 347-9828" class="header__phone">(916) 347-9828</a>
-          <a href="#" class="header__search">
-            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2267 11.2268C9.68061 12.7729 7.17389 12.7729 5.62779 11.2268C4.08169 9.68069 4.08169 7.17398 5.62779 5.62788C7.17389 4.08179 9.68061 4.08179 11.2267 5.62788C12.7728 7.17398 12.7728 9.68069 11.2267 11.2268ZM11.4918 13.7904C11.4042 13.7028 11.2695 13.6681 11.1595 13.7249C8.9169 14.8822 6.09347 14.5209 4.21357 12.641C1.88643 10.3139 1.88643 6.54081 4.21357 4.21367C6.54072 1.88653 10.3138 1.88653 12.6409 4.21367C14.8331 6.40589 14.9602 9.8812 13.0222 12.2222C13.0135 12.2328 13.0143 12.2484 13.024 12.2581L16.0885 15.3226C16.5116 15.7457 16.5116 16.4318 16.0885 16.8549C15.6654 17.278 14.9794 17.278 14.5562 16.8549L11.4918 13.7904Z" fill="#333333"/>
-              </svg>              
-          </a>
+          <div class="header__wrap-btn">
+            <a href="tel:(916) 347-9828" class="header__phone"><span>(916) 347-9828</span></a>
+            <a href="#" class="header__search">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2267 11.2268C9.68061 12.7729 7.17389 12.7729 5.62779 11.2268C4.08169 9.68069 4.08169 7.17398 5.62779 5.62788C7.17389 4.08179 9.68061 4.08179 11.2267 5.62788C12.7728 7.17398 12.7728 9.68069 11.2267 11.2268ZM11.4918 13.7904C11.4042 13.7028 11.2695 13.6681 11.1595 13.7249C8.9169 14.8822 6.09347 14.5209 4.21357 12.641C1.88643 10.3139 1.88643 6.54081 4.21357 4.21367C6.54072 1.88653 10.3138 1.88653 12.6409 4.21367C14.8331 6.40589 14.9602 9.8812 13.0222 12.2222C13.0135 12.2328 13.0143 12.2484 13.024 12.2581L16.0885 15.3226C16.5116 15.7457 16.5116 16.4318 16.0885 16.8549C15.6654 17.278 14.9794 17.278 14.5562 16.8549L11.4918 13.7904Z" fill="#2356A5"/>
+                </svg>              
+            </a>            
+          </div>
         </div>
       </div>
     </header>
@@ -70,29 +88,331 @@
             </div>
             <div class="layout__content layout-with-sidebar">
               <div class="sidebar">
+                <a href="#" class="all-categories-btn">All Categories</a>
                 <ul class="categories">
-                  <li><a href="">All Inventory</a></li>
-                  <li class="active"><a href="">Street Sweepers<span class="counter">45</span></a></li>
-                  <li><a href="">Garbage Trucks<span class="counter">40</span></a></li>
-                  <li><a href="">Bucket Trucks<span class="counter">45</span></a></li>
-                  <li><a href="">Dump Trucks<span class="counter">45</span></a></li>
-                  <li><a href="">Flatbed Trucks<span class="counter">45</span></a></li>
-                  <li><a href="">Utility / Service Trucks<span class="counter">45</span></a></li>
-                  <li><a href="">Cab & Chassis<span class="counter">45</span></a></li>
-                  <li><a href="">Fire Trucks<span class="counter">45</span></a></li>
-                  <li><a href="">Sewer / Vaacum Trucks<span class="counter">45</span></a></li>
-                  <li><a href="">Cranes<span class="counter">45</span></a></li>
-                  <li><a href="">Digger / Drill Trucks<span class="counter">45</span></a></li>
-                  <li><a href="">Buses<span class="counter">45</span></a></li>
-                  <li><a href="">Van / Box Trucks<span class="counter">45</span></a></li>
-                  <li><a href="">Equipment<span class="counter">45</span></a></li>
-                  <li><a href="">Telecom Equipment<span class="counter">45</span></a></li>
-                  <li><a href="">Highway Construction<span class="counter">45</span></a></li>
-                  <li><a href="">Generators / Welders<span class="counter">45</span></a></li>
-                  <li><a href="">Used Bodies / Parts<span class="counter">45</span></a></li>
-                  <li><a href="">AS-IS Bargains<span class="counter">45</span></a></li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                           All Inventory                          
+                        </div>
+                      </div>                      
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Street Sweepers
+                          <span class="counter">45 Available</span>                            
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Garbage Trucks
+                          <span class="counter">40 Available</span>                            
+                        </div>
+                      </div>                      
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Bucket Trucks
+                          <span class="counter">45 Available</span>                            
+                        </div>
+                      </div>                      
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Dump Trucks
+                          <span class="counter">45 Available</span>                            
+                        </div>
+                      </div>                        
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Flatbed Trucks
+                          <span class="counter">45 Available</span>                            
+                        </div>
+                      </div>                        
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Utility / Service Trucks
+                          <span class="counter">45 Available</span>                            
+                        </div>
+                      </div>                        
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Cab & Chassis
+                          <span class="counter">39 Available</span>                            
+                        </div>
+                      </div>                       
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Fire Trucks
+                          <span class="counter">49 Available</span>                            
+                        </div>
+                      </div>                      
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Sewer / Vaacum Trucks
+                          <span class="counter">29 Available</span>                            
+                        </div>
+                      </div>                       
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Cranes
+                          <span class="counter">33 Available</span>                            
+                        </div>
+                      </div>                       
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Digger / Drill Trucks
+                          <span class="counter">33 Available</span>                            
+                        </div>
+                      </div>                        
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Buses
+                          <span class="counter">120 Available</span>                            
+                        </div>
+                      </div>                        
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Van / Box Trucks
+                          <span class="counter">99 Available</span>                            
+                        </div>
+                      </div>                       
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Equipment
+                          <span class="counter">67 Available</span>                            
+                        </div>
+                      </div>                       
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Telecom Equipment
+                          <span class="counter">65 Available</span>                            
+                        </div>
+                      </div>                        
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Highway Construction
+                          <span class="counter">51 Available</span>                            
+                        </div>
+                      </div>                       
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Generators / Welders
+                          <span class="counter">58 Available</span>                            
+                        </div>
+                      </div>                         
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          Used Bodies / Parts
+                          <span class="counter">81 Available</span>                            
+                        </div>
+                      </div>                          
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="categories__item">
+                        <div class="categories__icon desktop">
+                          <img src="img/truck.svg" alt="">
+                        </div>
+                        <div class="categories__icon mobile">
+                          <img src="img/sweeper.png" alt="">
+                        </div>                        
+                        <div class="text">
+                          AS-IS Bargains
+                          <span class="counter">77 Available</span>                            
+                        </div>
+                      </div>                        
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="more-categories">More Categories</a>
+                  </li>
                 </ul>
-                <a href="" class="more-categories">More Categories</a>
               </div>
               <div class="content">
                 <div class="inventory__descriptions">
@@ -123,7 +443,7 @@
                       </a>
                     </div>
                     <div class="inventory__card-body">
-                      <h3>2004 Freightliner FC80 Johnston 770 Cyclone Vacuum Sweeper</h3>
+                      <h3><a href="">2004 Freightliner FC80 Johnston 770 Cyclone Vacuum Sweeper</a></h3>
                       <p>770 Cyclone for Sale, Large Stainless Steel Hopper, Ex-City!</p>
                       <div class="inventory__card-body-data">
                         <div>
@@ -134,7 +454,7 @@
                           <span>32,912</span>
                         </div>
                         <div>
-                          <img src="img/truck.svg" alt="">
+                          <img src="img/hash.svg" alt="">
                           <span>14094</span>
                         </div>
                       </div>
@@ -161,7 +481,7 @@
                       </a>
                     </div>
                     <div class="inventory__card-body">
-                      <h3>2004 Isuzu NQR Tymco 435 Air Street Sweeper</h3>
+                      <h3><a href="">2004 Isuzu NQR Tymco 435 Air Street Sweeper</a></h3>
                       <p>Non CDL, Isuzu Diesel, 4 Yard Hopper, Well Maintained Unit!</p>
                       <div class="inventory__card-body-data">
                         <div>
@@ -172,7 +492,7 @@
                           <span>161,065</span>
                         </div>
                         <div>
-                          <img src="img/truck.svg" alt="">
+                          <img src="img/hash.svg" alt="">
                           <span>14362</span>
                         </div>
                       </div>
@@ -199,7 +519,7 @@
                       </a>
                     </div>
                     <div class="inventory__card-body">
-                      <h3>2000 Freightliner FC70 Johnston 605 Vacuum Sweeper</h3>
+                      <h3><a href="">2000 Freightliner FC70 Johnston 605 Vacuum Sweeper</a></h3>
                       <p>Ex-City Johnston Sweeper for Sale, Low Miles, Dual Suction Nozzles!</p>
                       <div class="inventory__card-body-data">
                         <div>
@@ -210,7 +530,7 @@
                           <span>63,008</span>
                         </div>
                         <div>
-                          <img src="img/truck.svg" alt="">
+                          <img src="img/hash.svg" alt="">
                           <span>13182</span>
                         </div>
                       </div>
@@ -237,7 +557,7 @@
                       </a>
                     </div>
                     <div class="inventory__card-body">
-                      <h3>2014 Elgin Pelican Broom Street Sweeper</h3>
+                      <h3><a href="">2014 Elgin Pelican Broom Street Sweeper</a></h3>
                       <p>John Deere, Dual Drive, 120" Sweep Path, Ex-City Unit!</p>
                       <div class="inventory__card-body-data">
                         <div>
@@ -248,7 +568,7 @@
                           <span>161,065</span>
                         </div>
                         <div>
-                          <img src="img/truck.svg" alt="">
+                          <img src="img/hash.svg" alt="">
                           <span>14362</span>
                         </div>
                       </div>
@@ -275,7 +595,7 @@
                       </a>
                     </div>
                     <div class="inventory__card-body">
-                      <h3>2013 Elgin Pelican Broom Street Sweeper</h3>
+                      <h3><a href="">2013 Elgin Pelican Broom Street Sweeper</a></h3>
                       <p>Low Miles, 3.6 YD High Dump Hopper, Ex-City Unit!</p>
                       <div class="inventory__card-body-data">
                         <div>
@@ -286,7 +606,7 @@
                           <span>40,756</span>
                         </div>
                         <div>
-                          <img src="img/truck.svg" alt="">
+                          <img src="img/hash.svg" alt="">
                           <span>14233</span>
                         </div>
                       </div>
@@ -313,7 +633,7 @@
                       </a>
                     </div>
                     <div class="inventory__card-body">
-                      <h3>2013 International Schwarze M6000TE Broom Street Sweeper</h3>
+                      <h3><a href="">2013 International Schwarze M6000TE Broom Street Sweeper</a></h3>
                       <p>Low Miles/Hours, Dual Drive, High Dump, Ex-City!</p>
                       <div class="inventory__card-body-data">
                         <div>
@@ -324,7 +644,7 @@
                           <span>21,956</span>
                         </div>
                         <div>
-                          <img src="img/truck.svg" alt="">
+                          <img src="img/hash.svg" alt="">
                           <span>14275</span>
                         </div>
                       </div>
@@ -351,7 +671,7 @@
                       </a>
                     </div>
                     <div class="inventory__card-body">
-                      <h3>2010 Freightliner Johnston MS350 CNG Broom Street Sweeper</h3>
+                      <h3><a href="">2010 Freightliner Johnston MS350 CNG Broom Street Sweeper</a></h3>
                       <p>Alternative Fuel Street Sweeper, Low Miles, High Dump, Ex-City!</p>
                       <div class="inventory__card-body-data">
                         <div>
@@ -362,7 +682,7 @@
                           <span>23,069</span>
                         </div>
                         <div>
-                          <img src="img/truck.svg" alt="">
+                          <img src="img/hash.svg" alt="">
                           <span>13565</span>
                         </div>
                       </div>
@@ -409,12 +729,12 @@
           <div class="footer__item footer-contacts">
             <h4 class="subtitle">Contact Us</h4>
             <a href="tel:(916) 347-9828">(916) 347-9828</a>
-            <p>1317 Vinci Ave, Sacramento, CA 95838</p>
+            <p>1317 Vinci Ave, Sacramento,<br> CA 95838</p>
           </div>
           <div class="footer__item footer-social">
             <h4 class="subtitle">Social Media</h4>
             <p>
-              Follow us on social media to find out the latest updates about
+              Follow us on social media to find out<br> the latest updates about
               Trucksite
             </p>
             <ul>
@@ -424,7 +744,7 @@
           </div>
           <div class="footer__item footer-newsletter">
             <h4 class="subtitle">Newsletter</h4>
-            <p>Sign up to receive the latest inventory updates and deals.</p>
+            <p>Sign up to receive the latest inventory<br> updates and deals.</p>
             <a href="" class="btn secondary-btn">Subscribe</a>
           </div>
           <div class="footer__bottom">
@@ -437,6 +757,7 @@
         </div>
       </div>
     </footer>
+    <div class="overlay"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="js/libs.min.js"></script>

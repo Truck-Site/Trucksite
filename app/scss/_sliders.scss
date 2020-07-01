@@ -30,17 +30,10 @@
   &__icon {
     position: relative;
     display: flex;
-    height: 60px;
+    height: 80px;
     align-items: flex-end;
     justify-content: center;
-    margin-bottom: 12px;
-    &:after {
-      position: absolute;
-      bottom: -3px;
-      left: 50%;
-      transform: translateX(-50%);
-      content: url("../img/shadow.svg");
-    }
+    margin-bottom: 9px;
   }
   &__item {
     text-align: center;
@@ -66,7 +59,7 @@
   .slick-list {
     width: 100%;
     order: 1;
-    margin: 50px 0 22px;
+    margin: 0 0 21px;
     .slick-slide {
       padding: 0 5px;
     }

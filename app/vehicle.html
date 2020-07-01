@@ -14,10 +14,26 @@
     <header>
       <div class="container">
         <div class="header__wrapper">
+          <a href="" class="menu-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12H21" stroke="#2356A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 6H21" stroke="#2356A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 18H21" stroke="#2356A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
           <a href="#" class="logo">
             <img src="img/logo.svg" alt="logo" />
           </a>
-          <nav>
+          <nav id="mySidenav">
+            <div class="sidenav__header">
+              <a href="#" class="sidenav__logo"><img src="img/logo.svg" alt=""></a>
+              <a href="#" class="sidenav__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="#85878B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6L18 18" stroke="#85878B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+              </a>
+            </div>
             <ul>
               <li><a href="#">Inventory</a></li>
               <li><a href="#">Financing</a></li>
@@ -28,23 +44,14 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
-          <a href="tel:(916) 347-9828" class="header__phone">(916) 347-9828</a>
-          <a href="#" class="header__search">
-            <svg
-              width="21"
-              height="21"
-              viewBox="0 0 21 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M11.2267 11.2268C9.68061 12.7729 7.17389 12.7729 5.62779 11.2268C4.08169 9.68069 4.08169 7.17398 5.62779 5.62788C7.17389 4.08179 9.68061 4.08179 11.2267 5.62788C12.7728 7.17398 12.7728 9.68069 11.2267 11.2268ZM11.4918 13.7904C11.4042 13.7028 11.2695 13.6681 11.1595 13.7249C8.9169 14.8822 6.09347 14.5209 4.21357 12.641C1.88643 10.3139 1.88643 6.54081 4.21357 4.21367C6.54072 1.88653 10.3138 1.88653 12.6409 4.21367C14.8331 6.40589 14.9602 9.8812 13.0222 12.2222C13.0135 12.2328 13.0143 12.2484 13.024 12.2581L16.0885 15.3226C16.5116 15.7457 16.5116 16.4318 16.0885 16.8549C15.6654 17.278 14.9794 17.278 14.5562 16.8549L11.4918 13.7904Z"
-                fill="#333333"
-              />
-            </svg>
-          </a>
+          <div class="header__wrap-btn">
+            <a href="tel:(916) 347-9828" class="header__phone"><span>(916) 347-9828</span></a>
+            <a href="#" class="header__search">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2267 11.2268C9.68061 12.7729 7.17389 12.7729 5.62779 11.2268C4.08169 9.68069 4.08169 7.17398 5.62779 5.62788C7.17389 4.08179 9.68061 4.08179 11.2267 5.62788C12.7728 7.17398 12.7728 9.68069 11.2267 11.2268ZM11.4918 13.7904C11.4042 13.7028 11.2695 13.6681 11.1595 13.7249C8.9169 14.8822 6.09347 14.5209 4.21357 12.641C1.88643 10.3139 1.88643 6.54081 4.21357 4.21367C6.54072 1.88653 10.3138 1.88653 12.6409 4.21367C14.8331 6.40589 14.9602 9.8812 13.0222 12.2222C13.0135 12.2328 13.0143 12.2484 13.024 12.2581L16.0885 15.3226C16.5116 15.7457 16.5116 16.4318 16.0885 16.8549C15.6654 17.278 14.9794 17.278 14.5562 16.8549L11.4918 13.7904Z" fill="#2356A5"/>
+                </svg>              
+            </a>            
+          </div>
         </div>
       </div>
     </header>
@@ -576,12 +583,12 @@
           <div class="footer__item footer-contacts">
             <h4 class="subtitle">Contact Us</h4>
             <a href="tel:(916) 347-9828">(916) 347-9828</a>
-            <p>1317 Vinci Ave, Sacramento, CA 95838</p>
+            <p>1317 Vinci Ave, Sacramento,<br> CA 95838</p>
           </div>
           <div class="footer__item footer-social">
             <h4 class="subtitle">Social Media</h4>
             <p>
-              Follow us on social media to find out the latest updates about
+              Follow us on social media to find out<br> the latest updates about
               Trucksite
             </p>
             <ul>
@@ -591,7 +598,7 @@
           </div>
           <div class="footer__item footer-newsletter">
             <h4 class="subtitle">Newsletter</h4>
-            <p>Sign up to receive the latest inventory updates and deals.</p>
+            <p>Sign up to receive the latest inventory<br> updates and deals.</p>
             <a href="" class="btn secondary-btn">Subscribe</a>
           </div>
           <div class="footer__bottom">
@@ -604,6 +611,7 @@
         </div>
       </div>
     </footer>
+    <div class="overlay"></div>
     <!-- Modals -->
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">

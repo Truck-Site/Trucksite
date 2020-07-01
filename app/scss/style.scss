@@ -30,12 +30,14 @@ input:-ms-input-placeholder {
   color: rgba($solid, 0.3);
 }
 
-.container {
-  max-width: 1130px;
+@media (min-width: 1200px){
+  .container {
+      max-width: 1130px;
+  }  
 }
 
 body {
-  
+  position: relative;
   font-family: "SF Pro Display", sans-serif;
   font-size: 16px;
   line-height: 1.1em;
@@ -47,6 +49,22 @@ body {
   &.disable {
     position: relative;
     overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    content: "";
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -2;
+    &.active {
+      opacity: 1;
+      z-index: 2;
+    }
   }
 }
 
@@ -218,6 +236,9 @@ header {
 .popular-categories {
   padding-top: 60px;
   padding-bottom: 60px;
+  .title {
+    margin-bottom: 34px;
+  }
 }
 
 .featured-trucks {
@@ -226,7 +247,7 @@ header {
 }
 
 .advantages {
-  padding: 40px 0 50px;
+  padding: 30px 0 30px;
   .title {
     text-align: left;
     font-size: 28px;
@@ -238,13 +259,16 @@ header {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    padding: 86px 0;
+    padding: 40px 0;
     .left {
       width: 40%;
     }
     .right {
       width: 60%;
       text-align: center;
+      img {
+        max-width: 100%;
+      }
     }
     &:nth-of-type(even) {
       .left {
@@ -359,19 +383,23 @@ header {
   img {
     display: block;
     margin: 30px auto 27px;
+    height: 257px;
+    object-fit: cover;
+    border-radius: 4px;
     max-width: 100%;
   }
 }
 
 .california-clean {
   text-align: center;
-  padding: 40px 0 42px;
+  padding: 40px 0 64px;
   background: $light-background;
   .title {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
   p {
     font-size: 14px;
+    line-height: 1.2;
     font-weight: 400;
     color: $dark;
     a {
@@ -384,17 +412,17 @@ header {
 
 footer {
   background: $primary;
-  padding: 67px 0 50px;
+  padding: 65px 0 50px;
   .container {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
   }
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
   .footer {
-    .row {
-      margin-left: -10px;
-      margin-right: -10px;
-    }
     &__item {
       width: 21%;
       padding: 0 10px;
@@ -403,11 +431,14 @@ footer {
         font-weight: 700;
         color: $white;
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       }
     }
     &-menu {
       width: 36%;
+      .subtitle {
+        margin-bottom: 20px;
+      }
       ul {
         column-count: 2;
         padding: 0;
@@ -429,13 +460,15 @@ footer {
       a {
         display: inline-block;
         font-size: 14px;
+        line-height: 1.2;
         font-weight: 400;
         color: $white;
         text-decoration: none;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       }
       p {
         font-size: 14px;
+        line-height: 1.2;
         font-weight: 400;
         color: $white;
       }
@@ -532,49 +565,98 @@ footer {
   }
   &__content {
     .sidebar {
-      padding-right: 50px;
+      .all-categories-btn{
+        height: 47px;
+        width: 100%;
+        border-radius: 10px;
+        background: #F7F8FA;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        color:$dark-blue;
+        display: none;
+        &:after{
+          content: url(../img/union.svg);
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;          
+        }
+      }
       .categories {
         padding: unset;
         margin: unset;
         li {
           list-style: none;
+          margin: 5px 0;
           a {
-            height: 47px;
+            height: 49px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-size: 14px;
             font-weight: 400;
             color: $dark-blue;
-            padding: 5px 15px;
+            padding: 5px 8px;
             border-radius: 6px;
             text-decoration: none;
             &:hover {
               text-decoration: none;
               color: $primary;
+              background-color: #f7f8fa;
               span {
-                color: $primary;
+                display: block;
+                height: 12px;
               }
-            }
-            span {
-              display: none;
-              padding: 5px 9px;
-              font-size: 14px;
-              font-weight: 400;
-              color: $dark-blue;
-              background: rgba($primary, 0.1);
-              border-radius: 12px;
             }
           }
           &.active {
             a {
               color: $primary;
-              background: rgba($primary, 0.1);
+              background: #f7f8fa;
               span {
-                color: $primary;
                 display: block;
+                height: 12px;
               }
             }
+          }
+        }
+        &__item {
+          display: flex;
+          align-items: center;
+          .text {
+            font-size: 14px;
+            font-weight: 400;
+            color: $dark-blue;
+            span {
+              font-size: 12px;
+              line-height: 1;
+              font-weight: 400;
+              display: block;
+              height: 0;
+              overflow: hidden;
+              color: $green;
+              transition: 0.3s;
+            }
+          }
+        }
+        &__icon {
+          &.desktop {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $light-sky;
+            margin-right: 22px;
+            flex-shrink: 0;
+          }
+          &.mobile {
+            display: none;
           }
         }
       }
@@ -670,10 +752,14 @@ footer {
         display: flex;
         align-items: center;
         margin-top: 30px;
+        flex-wrap: wrap;
         div {
           display: flex;
           align-items: center;
-          margin-right: 24px;
+          margin-top: 3px;
+          margin-bottom: 3px;
+          margin-right: 20px;
+          flex-shrink: 0;
           span {
             display: inline-block;
             font-size: 14px;
@@ -690,7 +776,7 @@ footer {
             margin-right: 10px;
           }
           &:last-child {
-            margin: unset;
+            margin-right: unset;
           }
         }
       }

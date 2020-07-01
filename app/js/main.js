@@ -11,7 +11,9 @@ $(function () {
 
 // Slick sliders 
 
-$('.popular-categories__slider').slick({
+let pc__slider = $('.popular-categories__slider');
+
+let pc__slider__settings = {
   dots: true,
   infinite: true,
   speed: 300,
@@ -19,19 +21,19 @@ $('.popular-categories__slider').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 5,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
     },
     {
-      breakpoint: 600,
+      breakpoint:991,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 3,
+        slidesToScroll: 1
       }
     },
     {
@@ -41,10 +43,29 @@ $('.popular-categories__slider').slick({
         slidesToScroll: 1
       }
     }
+    
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
-  ]
+  ]  
+}
+
+if(window.innerWidth > 768){
+  pc__slider.slick(pc__slider__settings);
+}
+
+//Resize slider
+$(window).resize(function (e) {
+  if (window.innerWidth < 768) {
+    if ($(pc__slider).hasClass('slick-initialized')) {
+      $(pc__slider).slick('unslick');
+    }
+  }
+  else {
+      if(!$(pc__slider).hasClass('slick-initialized')){
+        $(pc__slider).slick(pc__slider__settings);
+    }    
+  }
 });
 
 $('.trucks__slider').slick({
@@ -58,20 +79,20 @@ $('.trucks__slider').slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 575,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -104,7 +125,7 @@ $('.slider-nav').slick({
   slidesToScroll: 1,
   asNavFor: '.slider-for',
   dots: false,
-  arrows:false,
+  arrows: false,
   centerMode: false,
   focusOnSelect: true
 });
@@ -113,13 +134,21 @@ $('.slider-nav').slick({
 
 let sideNav = document.getElementById("mySidenav");
 
-$('.menu-btn').on('click', function(e){
+$('.menu-btn').on('click', function (e) {
   e.preventDefault();
   sideNav.style.left = "0px";
-  $('body').addClass('disable overlay');
+  $('body').addClass('disable');
+  $('.overlay').addClass('active');
 });
-$('.sidenav__close').on('click', function(e){
+$('.sidenav__close').on('click', function (e) {
   e.preventDefault();
-  sideNav.style.left = "-250px";
-  $('body').removeClass('disable overlay');
+  sideNav.style.left = "-300px";
+  $('body').removeClass('disable');
+  $('.overlay').removeClass('active');
+});
+
+// All categories btn
+
+$('.all-categories-btn').on('click', function(){
+  $('.sidebar .categories').slideToggle();
 });
