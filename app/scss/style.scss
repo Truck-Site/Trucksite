@@ -30,10 +30,10 @@ input:-ms-input-placeholder {
   color: rgba($solid, 0.3);
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .container {
-      max-width: 1130px;
-  }  
+    max-width: 1130px;
+  }
 }
 
 body {
@@ -93,6 +93,9 @@ header {
   }
   .logo {
     display: flex;
+    img {
+      max-height: 41px;
+    }
   }
   nav {
     margin: 0 auto;
@@ -155,13 +158,8 @@ header {
       font-size: 15px;
       color: $primary;
       text-decoration: none;
-      margin-top: 1px;
-      &:before {
-        position: relative;
-        top: 2px;
+      svg {
         margin-right: 7px;
-        display: flex;
-        content: url("../img/phone.svg");
       }
     }
     &__search {
@@ -173,15 +171,23 @@ header {
 
 .main-screen {
   height: 495px;
-  background: url("../img/backgroundImage.png") no-repeat center;
   margin-top: 50px;
-  .container {
+  &__bg-wrapper {
     height: 100%;
+    background: url("../img/backgroundImage.png") no-repeat center;
     display: flex;
     align-items: center;
+    margin-left: -31px;
+    margin-right: -31px;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container {
+    height: 100%;
   }
   &__content {
-    margin-left: 240px;
+    margin-left: 255px;
     span {
       display: inline-block;
       font-size: 18px;
@@ -565,11 +571,11 @@ footer {
   }
   &__content {
     .sidebar {
-      .all-categories-btn{
+      .all-categories-btn {
         height: 47px;
         width: 100%;
         border-radius: 10px;
-        background: #F7F8FA;
+        background: #f7f8fa;
         padding: 10px 20px;
         display: flex;
         align-items: center;
@@ -577,13 +583,19 @@ footer {
         text-decoration: none;
         font-size: 16px;
         font-weight: 400;
-        color:$dark-blue;
+        color: $dark-blue;
         display: none;
-        &:after{
+        margin-top: 20px;
+        &:after {
           content: url(../img/union.svg);
           -webkit-transition: all 0.5s;
           -o-transition: all 0.5s;
-          transition: all 0.5s;          
+          transition: all 0.5s;
+        }
+        &.active{
+          &:after{
+            transform: rotate(180deg);
+          }
         }
       }
       .categories {
@@ -606,11 +618,17 @@ footer {
             &:hover {
               text-decoration: none;
               color: $primary;
-              background-color: #f7f8fa;
+              background: #f7f8fa;
               span {
                 display: block;
                 height: 12px;
               }
+            }
+            &.more-categories-btn {
+              display: inline-flex;
+              height: unset;
+              font-weight: 700;
+              color: $primary;
             }
           }
           &.active {
@@ -662,8 +680,7 @@ footer {
       }
       .more-categories {
         display: block;
-        padding: 5px 15px;
-        font-weight: 14px;
+        font-size: 14px;
         font-weight: 600;
         color: $primary;
         text-decoration: none;
@@ -735,10 +752,12 @@ footer {
     &-body {
       padding: 0 10px;
       flex-grow: 1;
-      h3 {
+      a.card-title {
+        display: inline-block;
         font-size: 16px;
         font-weight: 400;
         color: $dark-blue;
+        text-decoration: none;
         margin: unset;
         margin-bottom: 15px;
       }
@@ -793,6 +812,7 @@ footer {
       }
       a {
         width: 100%;
+        padding: 12px;
       }
     }
   }

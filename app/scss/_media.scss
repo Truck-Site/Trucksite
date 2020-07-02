@@ -30,8 +30,30 @@
     }
   }
   .main-screen {
+    height: 450px;
     &__content {
       margin: 0 auto;
+    }
+    &__bg-wrapper{
+      margin-left: -15px;
+      margin-right: -15px;
+    }    
+  }
+  .layout{
+    &__content{
+      .content{
+        .inventory{
+          &__card{
+            &-head{
+              padding: unset;
+            }
+            &-company{
+              max-width: 170px;
+              padding: unset;
+            }
+          }
+        }
+      }
     }
   }
   footer {
@@ -63,16 +85,52 @@
     }
   }
   .layout{
+    &__header{
+      display: none;
+    }    
     &__content{
       grid-template-columns: 1fr;
       .sidebar{
+        .all-categories-btn{
+          display: flex;
+        }
+        .categories__wrapper{
+          display: none;
+        }        
         .categories{
           display: flex;
           flex-wrap: wrap;
           li{
             width: calc(100%/3);
+            text-align: center;
+            padding: 5px;
+            margin: unset;
             a{
               height: 130px;
+              background: unset;
+              .text{
+                span{
+                  height: unset;
+                  opacity: 0;
+                }
+              }
+              &:hover{
+                background: unset;
+                span{
+                  opacity: 1;
+                }
+              }
+            }
+            &.active{
+              a{
+                background: unset;
+                span{
+                  opacity: 1;
+                }
+              }
+            }
+            &.more-categories{
+              display: none;
             }
           }
           &__item{
@@ -103,27 +161,16 @@
         }
       }
     }
-  }
-  .layout{
-    &__header{
-      display: none;
-    }
-    &__content{
-      .sidebar{
-        .all-categories-btn{
-          display: flex;
-        }
-        .categories{
-          display: none;
-        }
-      }
-    }
-  }  
+  } 
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
   header {
+    .container{
+      max-width: unset;
+      width: 100%;
+    }
     .header {
       &__phone {
         margin-left: auto;
@@ -170,6 +217,7 @@
     }
   }
   .main-screen {
+    height: 400px;
     &__content {
       .input-groupe {
         width: 500px;
@@ -222,7 +270,27 @@
       }
     }
   }
-
+  .layout{
+    &__content{
+      .content{
+        .inventory{
+          &__card{
+            &-head{
+              a{
+                img{
+                  width: 165px;
+                  height: 125px;
+                }
+              }
+            }
+            &-company{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }  
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -233,7 +301,9 @@
     height: 100%;    
   }
   header{
-    order:1;
+    &.index__header{
+      order:1;
+    }
   }   
   .main-screen {
     height: 300px;
@@ -257,19 +327,11 @@
     }
     .container{
       position: relative;
-      &:after{
-        position: absolute;
-        content: "";
-        top:0px;
-        left:6px;
-        right:6px;
-        bottom:0px;
-        background: url(../img/backgroundImage.png) no-repeat center;
-        overflow: hidden;
-        border-radius: 5px;
-        background-size: cover;
-      }
     }
+    &__bg-wrapper{
+      margin-left: -9px;
+      margin-right: -9px;
+    }    
   }
   .popular-categories{
     order:3;
@@ -290,6 +352,11 @@
   }
   .questions{
     order: 7;
+    &__help{
+      &-wrapper{
+        padding: 10px;
+      }
+    }
   }
   .family-owned{
     order: 8;
@@ -299,7 +366,9 @@
   }
   footer {
     padding: 50px;
-    order: 10;
+    &.index__footer{
+      order: 10;
+    }
     .container{
       padding: unset;
     }
@@ -330,6 +399,20 @@
         }
       }
     }
+  }
+  .trucks__slider{
+    margin:0 -15px;
+  }
+  .layout{
+    &__content{
+      .sidebar{      
+        .categories{
+          li{
+            width: calc(100%/2);
+          }
+        }
+      }
+    }  
   }    
 }
 

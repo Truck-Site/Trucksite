@@ -95,7 +95,11 @@ $('.trucks__slider').slick({
       breakpoint: 575,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        centerMode: true,
+        dots:false,
+        arrows:false,
+        infinite: false
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -150,5 +154,17 @@ $('.sidenav__close').on('click', function (e) {
 // All categories btn
 
 $('.all-categories-btn').on('click', function(){
-  $('.sidebar .categories').slideToggle();
+  $('.sidebar .categories__wrapper').slideToggle();
+  $(this).toggleClass('active');
+});
+
+//Resize styles
+
+let categories = $('.sidebar .categories__wrapper');
+
+$(window).resize(function(){
+    var wid = $(window).width();
+    if(wid > 992 && categories.is(':hidden')) {
+        categories.removeAttr('style');    
+    } 
 });
