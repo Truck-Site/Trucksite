@@ -34,20 +34,20 @@
     &__content {
       margin: 0 auto;
     }
-    &__bg-wrapper{
+    &__bg-wrapper {
       margin-left: -15px;
       margin-right: -15px;
-    }    
+    }
   }
-  .layout{
-    &__content{
-      .content{
-        .inventory{
-          &__card{
-            &-head{
+  .layout {
+    &__content {
+      .content {
+        .inventory {
+          &__card {
+            &-head {
               padding: unset;
             }
-            &-company{
+            &-company {
               max-width: 170px;
               padding: unset;
             }
@@ -84,64 +84,64 @@
       }
     }
   }
-  .layout{
-    &__header{
+  .layout {
+    &__header {
       display: none;
-    }    
-    &__content{
+    }
+    &__content {
       grid-template-columns: 1fr;
-      .sidebar{
-        .all-categories-btn{
+      .sidebar {
+        .all-categories-btn {
           display: flex;
         }
-        .categories__wrapper{
+        .categories__wrapper {
           display: none;
-        }        
-        .categories{
+        }
+        .categories {
           display: flex;
           flex-wrap: wrap;
-          li{
-            width: calc(100%/3);
+          li {
+            width: calc(100% / 3);
             text-align: center;
             padding: 5px;
             margin: unset;
-            a{
+            a {
               height: 130px;
               background: unset;
-              .text{
-                span{
+              .text {
+                span {
                   height: unset;
                   opacity: 0;
                 }
               }
-              &:hover{
+              &:hover {
                 background: unset;
-                span{
+                span {
                   opacity: 1;
                 }
               }
             }
-            &.active{
-              a{
+            &.active {
+              a {
                 background: unset;
-                span{
+                span {
                   opacity: 1;
                 }
               }
             }
-            &.more-categories{
+            &.more-categories {
               display: none;
             }
           }
-          &__item{
+          &__item {
             flex-direction: column;
             flex-grow: 1;
           }
-          &__icon{
-            &.desktop{
+          &__icon {
+            &.desktop {
               display: none;
             }
-            &.mobile{
+            &.mobile {
               display: block;
             }
           }
@@ -161,13 +161,13 @@
         }
       }
     }
-  } 
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
   header {
-    .container{
+    .container {
       max-width: unset;
       width: 100%;
     }
@@ -224,155 +224,179 @@
       }
     }
   }
-  .popular-categories{
-    &__slider{
+  .popular-categories {
+    &__slider {
       justify-content: flex-start;
-      & > div{
-        width: calc(100%/3);
+      & > div {
+        width: calc(100% / 3);
       }
     }
   }
-  .advantages{
-   &__item{
-     flex-direction: column;
-     .left,.right{
-       width: 100%;
-       text-align: center;
-       .title{
-         text-align: center;
-       }
-       ul{
-         display: inline-block;
-       }
-       .wrap-btn{
-         flex-direction: column;
-         a{
-           margin-bottom: 20px;
-         }
-         span{
-           margin: unset;
-         }
-       }
-     }
-     .left{
-       max-width: 400px;
-       order:2;
-     }
-     .right{
-       order:1;
-     }
-   } 
+  .advantages {
+    &__item {
+      flex-direction: column;
+      .left,
+      .right {
+        width: 100%;
+        text-align: center;
+        .title {
+          text-align: center;
+        }
+        ul {
+          display: inline-block;
+        }
+        .wrap-btn {
+          flex-direction: column;
+          a {
+            margin-bottom: 20px;
+          }
+          span {
+            margin: unset;
+          }
+        }
+      }
+      .left {
+        max-width: 400px;
+        order: 2;
+      }
+      .right {
+        order: 1;
+      }
+    }
   }
-  .california-clean{
-    p{
-      br{
+  .california-clean {
+    p {
+      br {
         display: none;
       }
     }
   }
-  .layout{
-    &__content{
-      .content{
-        .inventory{
-          &__card{
-            &-head{
-              a{
-                img{
+  .layout {
+    &__content {
+      .content {
+        .inventory {
+          &__list {
+            .title {
+              font-weight: 500;
+            }
+          }
+          &__card {
+            &-head {
+              a {
+                img {
                   width: 165px;
                   height: 125px;
                 }
               }
             }
-            &-company{
+            &-body{
+              a.card-title{
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 8px;
+              }
+              p{
+                font-size: 12px;
+              }
+              &-data{
+                margin-top: 10px;
+                div{
+                  span{
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+            &-company {
               display: none;
             }
           }
         }
       }
     }
-  }  
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  body{
+  body {
     display: flex;
     flex-direction: column;
-    height: 100%;    
+    height: 100%;
   }
-  header{
-    &.index__header{
-      order:1;
+  header {
+    &.index__header {
+      order: 1;
     }
-  }   
+  }
   .main-screen {
     height: 300px;
     background: unset;
-    order:2;
+    order: 2;
     &__content {
       flex-grow: 1;
       z-index: 2;
-      margin:0 27px; 
-      span{
+      margin: 0 27px;
+      span {
         font-size: 16px;
         padding: 8px 11px;
       }
-      h1{
+      h1 {
         font-size: 28px;
-        margin:15px 0 25px;
+        margin: 15px 0 25px;
       }
       .input-groupe {
         width: 100%;
       }
     }
-    .container{
+    .container {
       position: relative;
     }
-    &__bg-wrapper{
+    &__bg-wrapper {
       margin-left: -9px;
       margin-right: -9px;
-    }    
+    }
   }
-  .popular-categories{
-    order:3;
-    &__slider{
-      & > div{
-        width: calc(100%/2);
+  .popular-categories {
+    order: 3;
+    &__slider {
+      & > div {
+        width: calc(100% / 2);
       }
-    }    
+    }
   }
-  .testimonials{
-    order:4;
+  .testimonials {
+    order: 4;
   }
-  .featured-trucks{
-    order:5;
+  .featured-trucks {
+    order: 5;
   }
-  .advantages{
+  .advantages {
     order: 6;
   }
-  .questions{
+  .questions {
     order: 7;
-    &__help{
-      &-wrapper{
+    &__help {
+      &-wrapper {
         padding: 10px;
       }
     }
   }
-  .family-owned{
+  .family-owned {
     order: 8;
   }
-  .california-clean{
+  .california-clean {
     order: 9;
   }
   footer {
     padding: 50px;
-    &.index__footer{
+    &.index__footer {
       order: 10;
     }
-    .container{
+    .container {
       padding: unset;
     }
-    .row{
+    .row {
       margin: unset;
     }
     .footer {
@@ -386,34 +410,34 @@
           }
         }
       }
-      &__bottom{
+      &__bottom {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        a{
+        a {
           margin-bottom: 20px;
         }
-        span{
-          margin:unset;
+        span {
+          margin: unset;
         }
       }
     }
   }
-  .trucks__slider{
-    margin:0 -15px;
+  .trucks__slider {
+    margin: 0 -15px;
   }
-  .layout{
-    &__content{
-      .sidebar{      
-        .categories{
-          li{
-            width: calc(100%/2);
+  .layout {
+    &__content {
+      .sidebar {
+        .categories {
+          li {
+            width: calc(100% / 2);
           }
         }
       }
-    }  
-  }    
+    }
+  }
 }
 
 // Extra large devices (large desktops)

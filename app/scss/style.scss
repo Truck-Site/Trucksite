@@ -672,6 +672,9 @@ footer {
             background: $light-sky;
             margin-right: 22px;
             flex-shrink: 0;
+            img{
+              max-width: 30px;
+            }
           }
           &.mobile {
             display: none;
@@ -696,7 +699,6 @@ footer {
   &__descriptions {
     padding-bottom: 30px;
     border-bottom: 1px solid $light;
-    margin-bottom: 30px;
     .title {
       margin-bottom: 20px;
       line-height: 47px;
@@ -710,6 +712,17 @@ footer {
       a {
         font-weight: 600;
         color: $primary;
+        text-decoration: none;
+      }
+    }
+  }
+  &__list{
+    .title{
+      display: block;
+      text-decoration: none;
+      margin-top: 30px;
+      &:hover{
+        color:$dark-blue;
         text-decoration: none;
       }
     }
@@ -782,9 +795,10 @@ footer {
           span {
             display: inline-block;
             font-size: 14px;
-            font-weight: 400;
+            font-weight: 500;
             &.price {
               color: $green;
+              font-weight: 400;
               padding: 4px 9px;
               border-radius: 5px;
               background-color: rgba($green, 0.1);
