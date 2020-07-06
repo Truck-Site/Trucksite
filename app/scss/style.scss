@@ -592,8 +592,8 @@ footer {
           -o-transition: all 0.5s;
           transition: all 0.5s;
         }
-        &.active{
-          &:after{
+        &.active {
+          &:after {
             transform: rotate(180deg);
           }
         }
@@ -672,7 +672,7 @@ footer {
             background: $light-sky;
             margin-right: 22px;
             flex-shrink: 0;
-            img{
+            img {
               max-width: 30px;
             }
           }
@@ -699,6 +699,7 @@ footer {
   &__descriptions {
     padding-bottom: 30px;
     border-bottom: 1px solid $light;
+    overflow: hidden;
     .title {
       margin-bottom: 20px;
       line-height: 47px;
@@ -715,14 +716,28 @@ footer {
         text-decoration: none;
       }
     }
+    ul {
+      li {
+        font-size: 14px;
+        line-height: 1.33;
+        font-weight: 400;
+        color: gray;
+      }
+    }
+    // & * {
+    //   display: none;
+    // }
+    // &~:nth-of-type(1){
+    //   display: block;
+    // }
   }
-  &__list{
-    .title{
+  &__list {
+    .title {
       display: block;
       text-decoration: none;
       margin-top: 30px;
-      &:hover{
-        color:$dark-blue;
+      &:hover {
+        color: $dark-blue;
         text-decoration: none;
       }
     }
@@ -844,6 +859,8 @@ footer {
       color: $gray;
       background: $light;
       border-radius: 6px;
+      margin: 2px 0;
+      margin-left: auto;
     }
   }
 }

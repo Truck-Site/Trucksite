@@ -168,3 +168,16 @@ $(window).resize(function(){
         categories.removeAttr('style');    
     } 
 });
+
+//Hiden description
+
+var allChildren = $('.inventory__descriptions').children();
+
+allChildren.hide();
+allChildren.first().show().css({'cursor':'pointer'});
+allChildren.last().show().css({'cursor':'pointer'});
+$('.inventory__descriptions').first().on('click', function(){
+  allChildren.show();
+});
+
+
