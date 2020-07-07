@@ -601,10 +601,10 @@ footer {
       .categories {
         padding: unset;
         margin: unset;
-        li {
+        & > li {
           list-style: none;
           margin: 5px 0;
-          a {
+          & > a {
             height: 49px;
             display: flex;
             align-items: center;
@@ -623,12 +623,6 @@ footer {
                 display: block;
                 height: 12px;
               }
-            }
-            &.more-categories-btn {
-              display: inline-flex;
-              height: unset;
-              font-weight: 700;
-              color: $primary;
             }
           }
           &.active {
@@ -681,14 +675,47 @@ footer {
           }
         }
       }
-      .more-categories {
-        display: block;
+      .more-categories-btn {
+        display: inline-block;
         font-size: 14px;
         font-weight: 600;
         color: $primary;
+        padding: 5px 8px;
+        border-radius: 6px;
         text-decoration: none;
         &:hover {
           color: lighten($primary, 10%);
+          background: #f7f8fa;
+        }
+      }
+      .more-categories {
+        display: none;
+        margin: unset;
+        padding: unset;
+        li {
+          list-style: none;
+          margin:2px 0;
+          a{
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 400;
+            color: $dark-blue;
+            padding: 5px 8px;
+            border-radius: 6px;
+            text-decoration: none;
+            &:before{
+              display: inline-block;
+              content: "\00bb";
+              margin-right: 7px;
+            }
+            &:hover{
+              text-decoration: none;
+              color: $primary;
+              background: #f7f8fa;              
+            }            
+          }
         }
       }
     }
@@ -701,7 +728,6 @@ footer {
     border-bottom: 1px solid $light;
     overflow: hidden;
     .title {
-      margin-bottom: 20px;
       line-height: 47px;
     }
     p {
@@ -709,12 +735,13 @@ footer {
       line-height: 1.33;
       font-weight: 400;
       color: gray;
-      margin: unset;
-      a {
-        font-weight: 600;
-        color: $primary;
-        text-decoration: none;
-      }
+    }
+    a {
+      font-size: 14px;
+      line-height: 1.33;
+      font-weight: 600;
+      color: $primary;
+      text-decoration: none;
     }
     ul {
       li {
@@ -722,14 +749,9 @@ footer {
         line-height: 1.33;
         font-weight: 400;
         color: gray;
+        margin-bottom: 5px;
       }
     }
-    // & * {
-    //   display: none;
-    // }
-    // &~:nth-of-type(1){
-    //   display: block;
-    // }
   }
   &__list {
     .title {

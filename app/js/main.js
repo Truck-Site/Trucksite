@@ -174,10 +174,15 @@ $(window).resize(function(){
 var allChildren = $('.inventory__descriptions').children();
 
 allChildren.hide();
-allChildren.first().show().css({'cursor':'pointer'});
+allChildren.first().show();
 allChildren.last().show().css({'cursor':'pointer'});
 $('.inventory__descriptions').first().on('click', function(){
   allChildren.show();
 });
 
+
+$('.more-categories-btn').on('click', function(e){
+  e.preventDefault();
+  $('.more-categories').slideToggle();
+});
 

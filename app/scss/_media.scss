@@ -100,12 +100,12 @@
         .categories {
           display: flex;
           flex-wrap: wrap;
-          li {
+          & > li {
             width: calc(100% / 3);
             text-align: center;
             padding: 5px;
             margin: unset;
-            a {
+            & > a {
               height: 130px;
               background: unset;
               .text {
@@ -129,9 +129,6 @@
                 }
               }
             }
-            &.more-categories {
-              display: none;
-            }
           }
           &__item {
             flex-direction: column;
@@ -144,6 +141,16 @@
             &.mobile {
               display: block;
             }
+          }
+        }
+      }
+      .inventory{
+        &__footer{
+          flex-direction: column;
+          margin:30px 0 30px;
+          .trucks-results{
+            margin-left: unset;
+            margin:15px 0 0 0;
           }
         }
       }
@@ -289,19 +296,19 @@
                 }
               }
             }
-            &-body{
-              a.card-title{
+            &-body {
+              a.card-title {
                 font-size: 14px;
                 font-weight: 500;
                 margin-bottom: 8px;
               }
-              p{
+              p {
                 font-size: 12px;
               }
-              &-data{
+              &-data {
                 margin-top: 10px;
-                div{
-                  span{
+                div {
+                  span {
                     font-size: 12px;
                   }
                 }
