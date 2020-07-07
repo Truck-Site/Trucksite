@@ -176,3 +176,16 @@ $('.more-categories-btn').on('click', function(e){
   $('.more-categories').slideToggle();
 });
 
+//Hide tables
+
+// var table = $('.vehicle__tables figure .table');
+
+// $('.vehicle__tables figure h3').each(function(){
+//   $(this).on('click', function(){
+//     table.slideToggle();
+//   })
+// })
+
+// $('.vehicle__tables figure h3').on('click',function(){
+  
+// });
