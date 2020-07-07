@@ -695,8 +695,8 @@ footer {
         padding: unset;
         li {
           list-style: none;
-          margin:2px 0;
-          a{
+          margin: 2px 0;
+          a {
             display: inline-flex;
             align-items: center;
             justify-content: space-between;
@@ -706,16 +706,16 @@ footer {
             padding: 5px 8px;
             border-radius: 6px;
             text-decoration: none;
-            &:before{
+            &:before {
               display: inline-block;
               content: "\00bb";
               margin-right: 7px;
             }
-            &:hover{
+            &:hover {
               text-decoration: none;
               color: $primary;
-              background: #f7f8fa;              
-            }            
+              background: #f7f8fa;
+            }
           }
         }
       }
@@ -728,6 +728,18 @@ footer {
     padding-bottom: 30px;
     border-bottom: 1px solid $light;
     overflow: hidden;
+    #category_description {
+      height: 40px;
+      overflow: hidden;
+    }
+    &.shown {
+      #category_description {
+        height: 100%;
+      }
+      #more_control {
+        display: none;
+      }
+    }
     .title {
       line-height: 47px;
     }
@@ -912,7 +924,7 @@ footer {
     &-info {
       width: 300px;
       flex-shrink: 0;
-      .inventory__data.vehicle-style{
+      .inventory__data.vehicle-style {
         margin-top: unset;
         margin-bottom: 20px;
       }
@@ -994,11 +1006,11 @@ footer {
   }
 }
 
-.callback__now{
+.callback__now {
   display: flex;
   align-items: center;
   margin-bottom: 35px;
-  .icon{
+  .icon {
     width: 38px;
     height: 38px;
     display: flex;
@@ -1008,24 +1020,24 @@ footer {
     background: $light;
     margin-right: 15px;
   }
-  label{
+  label {
     display: flex;
     flex-direction: column;
     margin: unset;
-    span{
+    span {
       display: inline-block;
       font-size: 10px;
       line-height: 12px;
       font-weight: 600;
-      color:$light-gray;
+      color: $light-gray;
       margin-bottom: 4px;
       text-transform: uppercase;
     }
-    a{
+    a {
       font-size: 24px;
       line-height: 29px;
       font-weight: 400;
-      color:$dark;
+      color: $dark;
       text-decoration: none;
     }
   }

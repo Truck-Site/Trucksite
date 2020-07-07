@@ -169,17 +169,7 @@ $(window).resize(function(){
     } 
 });
 
-//Hiden description
-
-var allChildren = $('.inventory__descriptions').children();
-
-allChildren.hide();
-allChildren.first().show();
-allChildren.last().show().css({'cursor':'pointer'});
-$('.inventory__descriptions').first().on('click', function(){
-  allChildren.show();
-});
-
+//More categories
 
 $('.more-categories-btn').on('click', function(e){
   e.preventDefault();
