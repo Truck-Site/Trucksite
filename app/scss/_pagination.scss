@@ -1,6 +1,7 @@
 .pagination{
     margin: unset;
     padding: unset;
+    flex-wrap: wrap;
     .page{
         &-item{
             margin:0 3px;

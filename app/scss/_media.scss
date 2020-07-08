@@ -155,6 +155,9 @@
         &__footer {
           flex-direction: column;
           margin: 30px 0 30px;
+          .pagination{
+            justify-content: center;
+          }
           .trucks-results {
             margin-left: unset;
             margin: 15px 0 0 0;
@@ -321,6 +324,34 @@
             }
           }
         }
+        &__description{
+          flex-direction: column;
+          &-text{
+            .inventory__data{
+              display: flex;
+            }
+          }
+          &-info{
+            max-width: 380px;
+            width: 100%;
+            margin: 0 auto;
+            .inventory__data,.link,a{
+              display: none;
+            }
+            .finance__block{
+              display: block;
+              a{
+                display: block;
+              }
+            }
+          }
+        }
+        &__item-functions{
+          border-bottom: 1px solid $light;
+          .item-functions{
+            display: flex;
+          }
+        }
       }      
       .content {
         .inventory {
@@ -361,6 +392,20 @@
             }
           }
         }
+      }
+    }
+  }
+  .callback{
+    &__now{
+      .icon{
+        display: none;
+      }
+      label{
+        a{
+          font-size: 16px;
+          line-height: 1.2;
+          color:#1C49AD;
+        }        
       }
     }
   }

@@ -432,6 +432,7 @@
             background: $red;
             text-decoration: none;
             transition:0.3s;
+            outline: none;
             &:hover{
               background: darken($red, 10%);
             }

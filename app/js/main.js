@@ -197,16 +197,17 @@ $('.more-categories-btn').on('click', function(e){
 });
 
 //Hide tables
-
-  if(window.innerWidth < 768){
-    var table = $('.vehicle__tables figure .table');
+    var table = $('.vehicle__tables figure .table-wrapper');
 
     $('.vehicle__tables figure h3').each(function(){
       $(this).on('click', function(){
         $(this).next(table).slideToggle();
       })
     })
-  }
+
+  // if(window.innerWidth < 768){
+
+  // }
 // $(window).resize(function (e) {
 
 // });
