@@ -18,13 +18,13 @@ let pc__slider__settings = {
   infinite: true,
   speed: 300,
   slidesToShow: 7,
-  slidesToScroll: 1,
+  slidesToScroll: 7,
   responsive: [
     {
       breakpoint: 1200,
       settings: {
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         infinite: true,
         dots: true
       }
@@ -33,7 +33,7 @@ let pc__slider__settings = {
       breakpoint:991,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 3
       }
     },
     {
@@ -117,12 +117,32 @@ $('.testimonials__slider').slick({
   slidesToScroll: 1
 });
 
+var $status = $('.pagingInfo');
+// var $slickElement = $('.slideshow');
+
+$('.slider-for').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+  var i = (currentSlide ? currentSlide : 0) + 1;
+  $status.text(i + ' of ' + slick.slideCount);
+});
+
 $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
   fade: true,
-  asNavFor: '.slider-nav'
+  asNavFor: '.slider-nav',
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        arrows: false        
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 $('.slider-nav').slick({
   slidesToShow: 5,
@@ -178,14 +198,17 @@ $('.more-categories-btn').on('click', function(e){
 
 //Hide tables
 
-// var table = $('.vehicle__tables figure .table');
+  if(window.innerWidth < 768){
+    var table = $('.vehicle__tables figure .table');
 
-// $('.vehicle__tables figure h3').each(function(){
-//   $(this).on('click', function(){
-//     table.slideToggle();
-//   })
-// })
+    $('.vehicle__tables figure h3').each(function(){
+      $(this).on('click', function(){
+        $(this).next(table).slideToggle();
+      })
+    })
+  }
+// $(window).resize(function (e) {
 
-// $('.vehicle__tables figure h3').on('click',function(){
-  
 // });
+
+

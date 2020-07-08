@@ -188,7 +188,7 @@ header {
   }
   &__content {
     margin-left: 255px;
-    span {
+    .trademark {
       display: inline-block;
       font-size: 18px;
       font-weight: 400;
@@ -924,10 +924,6 @@ footer {
     &-info {
       width: 300px;
       flex-shrink: 0;
-      .inventory__data.vehicle-style {
-        margin-top: unset;
-        margin-bottom: 20px;
-      }
       .btn {
         width: 100%;
         margin-bottom: 15px;
@@ -1007,6 +1003,11 @@ footer {
   }
 }
 
+.inventory__data.vehicle-style {
+  margin-top: unset;
+  margin-bottom: 20px;
+}
+
 .callback__now {
   display: flex;
   align-items: center;
@@ -1045,6 +1046,7 @@ footer {
 }
 
 .recently-viewed {
+  display: none;
   padding: 50px 0;
 }
 

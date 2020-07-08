@@ -54,6 +54,13 @@
           }
         }
       }
+      .vehicle{
+        &__description{
+          &-text{
+            padding-right: 15px;
+          }
+        }
+      }
     }
   }
   footer {
@@ -170,7 +177,7 @@
     }
   }
   .vehicle {
-    &__tables{
+    &__tables {
       grid-template-columns: 1fr;
     }
     &__slider {
@@ -299,6 +306,22 @@
   }
   .layout {
     &__content {
+      .vehicle {
+        &__slider {
+          .slider-for {
+            button {
+              &.slick-arrow {
+                &.slick-prev {
+                  left: -5px;
+                }
+                &.slick-next {
+                  right: -5px;
+                }
+              }
+            }
+          }
+        }
+      }      
       .content {
         .inventory {
           &__list {
@@ -455,6 +478,30 @@
   }
   .layout {
     &__content {
+      .vehicle {
+        &__slider {
+          margin: 0 auto 20px;
+          .pagingInfo {
+            display: inline-block;
+          }
+          .slider-for{
+            margin-left: -15px;
+            margin-right: -15px;
+            .slick-list{
+              padding: unset;
+              .slick-slide{
+                .watch-video{
+                  top:14px;
+                  left:14px;
+                }
+              } 
+            } 
+          } 
+          .slider-nav {
+            display: none;
+          }
+        }
+      }
       .sidebar {
         .categories {
           li {

@@ -66,6 +66,9 @@
     margin: 0 0 21px;
     .slick-slide {
       padding: 0 5px;
+      &:focus{
+        outline: none;
+      }
     }
   }
   button.slick-arrow {
@@ -157,6 +160,9 @@
       order: 1;
       margin: 43px 0 43px;
       .slick-slide {
+        &:focus{
+          outline: none;
+        }
         .trucks-slide {
           padding: 0 10px;
           text-align: center;
@@ -283,6 +289,11 @@
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
+    .slick-slide{
+      &:focus{
+        outline: none;
+      }
+    }
   }
   p{
     font-size: 20px;
@@ -338,8 +349,22 @@
 .vehicle {
   &__slider {
     max-width: 780px;
-    margin: 0 auto;
-    padding: 30px 0 115px;
+    margin:30px  auto 115px;
+    position: relative;
+    .pagingInfo{
+      position: absolute;
+      bottom:14px;
+      right:17px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.2;
+      color:$white;
+      padding: 7px 12px;
+      border-radius: 6px;
+      background: rgba($dark,0.8);
+      display:none;
+      z-index: 2;
+    }
     .slider-for {
       margin-bottom: 20px;
       margin-left: -10px;
@@ -388,6 +413,9 @@
         padding: 0 10px;
         .slick-slide {
           text-align: center;
+          &:focus{
+            outline: none;
+          }
           img {
             display: inline-block;
             width: 100%;
@@ -433,6 +461,9 @@
         .slick-slide {
           text-align: center;
           padding: 0 10px;
+          &:focus{
+            outline: none;
+          }
           img {
             display: inline-block;
             width: 100%;
