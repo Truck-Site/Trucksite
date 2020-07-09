@@ -63,6 +63,22 @@
         </div>
       </div>
     </header>
+    <!-- Search  -->
+    <section class="search__block">
+      <div class="container">
+        <form action="">
+          <div class="form-field-group">
+            <input type="text" name="search" placeholder="Search our Inventory">
+            <button>
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2267 11.2268C9.68061 12.7729 7.17389 12.7729 5.62779 11.2268C4.08169 9.68069 4.08169 7.17398 5.62779 5.62788C7.17389 4.08179 9.68061 4.08179 11.2267 5.62788C12.7728 7.17398 12.7728 9.68069 11.2267 11.2268ZM11.4918 13.7904C11.4042 13.7028 11.2695 13.6681 11.1595 13.7249C8.9169 14.8822 6.09347 14.5209 4.21357 12.641C1.88643 10.3139 1.88643 6.54081 4.21357 4.21367C6.54072 1.88653 10.3138 1.88653 12.6409 4.21367C14.8331 6.40589 14.9602 9.8812 13.0222 12.2222C13.0135 12.2328 13.0143 12.2484 13.024 12.2581L16.0885 15.3226C16.5116 15.7457 16.5116 16.4318 16.0885 16.8549C15.6654 17.278 14.9794 17.278 14.5562 16.8549L11.4918 13.7904Z" fill="#333333"/>
+                </svg>              
+            </button>
+            <a href="#" class="cancel">Cancel</a>            
+          </div>
+        </form>
+      </div>
+    </section>    
     <!-- Layout  -->
     <div class="layout">
         <div class="container">
@@ -71,8 +87,36 @@
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="#">Inventory</a></li>
                       <li class="breadcrumb-item"><a href="#">Street Sweepers</a></li>
-                      <li class="breadcrumb-item"><a href="#">All sub-types</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">All Makes</li>
+                      <li class="breadcrumb-item">
+                        <a href="#">
+                          <select name="" id="" class="selectpicker">
+                            <option value="">All sub-types</option>
+                            <option value="">Mechanical Brooms</option>
+                            <option value="">Air Vacuum</option>
+                            <option value="">Scrubbers</option>
+                          </select> 
+                        </a>
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        <a href="#">
+                          <select name="" id="" class="selectpicker">
+                            <option value="">All Makes</option>
+                            <option value="">Allianz</option>
+                            <option value="">Athey-Mobil</option>
+                            <option value="">Chevrolet</option>
+                            <option value="">Elgin</option>
+                            <option value="">Freightliner</option>
+                            <option value="">Global</option>
+                            <option value="">GMC</option>
+                            <option value="">International</option>
+                            <option value="">Isuzu</option>
+                            <option value="">Schwarze</option>
+                            <option value="">Sterling</option>
+                            <option value="">Tennant</option>
+                            <option value="">Tymco</option>                                                        
+                          </select> 
+                        </a>
+                      </li>
                     </ol>
                   </nav>
                   <div class="select-groupe">
@@ -420,7 +464,7 @@
                     </li>
                   </ul>
                   <div class="more-categories-wrapper">
-                    <a href="" class="more-categories-btn">More Categories</a>
+                    <a href="" class="more-categories-btn"><span>More</span> Categories</a>
                     <ul class="more-categories">
                       <li>
                       <a href=""><span>Air Compressors</span></a>
@@ -800,6 +844,13 @@
                       </ul>
                     </nav>
                     <span class="trucks-results">45 Results</span>
+                    <a href="#" class="print_with_price">Print with prices</a>
+                    <div class="remark">
+                      <p>* Plus government fees and taxes, any finance charges, any dealer document preparation charge and any emission testing charge. 
+                      Vehicle may be subject to prior sale. 
+                      We disclaim any warranty as to the availability of, condition of, or accuracy of information provided about the vehicles listed on this website.
+                      </p>
+                    </div>
                   </div>                  
                 </div>
               </div>

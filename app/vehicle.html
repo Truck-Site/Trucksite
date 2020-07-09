@@ -63,6 +63,22 @@
         </div>
       </div>
     </header>
+    <!-- Search  -->
+    <section class="search__block">
+      <div class="container">
+        <form action="">
+          <div class="form-field-group">
+            <input type="text" name="search" placeholder="Search our Inventory">
+            <button>
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2267 11.2268C9.68061 12.7729 7.17389 12.7729 5.62779 11.2268C4.08169 9.68069 4.08169 7.17398 5.62779 5.62788C7.17389 4.08179 9.68061 4.08179 11.2267 5.62788C12.7728 7.17398 12.7728 9.68069 11.2267 11.2268ZM11.4918 13.7904C11.4042 13.7028 11.2695 13.6681 11.1595 13.7249C8.9169 14.8822 6.09347 14.5209 4.21357 12.641C1.88643 10.3139 1.88643 6.54081 4.21357 4.21367C6.54072 1.88653 10.3138 1.88653 12.6409 4.21367C14.8331 6.40589 14.9602 9.8812 13.0222 12.2222C13.0135 12.2328 13.0143 12.2484 13.024 12.2581L16.0885 15.3226C16.5116 15.7457 16.5116 16.4318 16.0885 16.8549C15.6654 17.278 14.9794 17.278 14.5562 16.8549L11.4918 13.7904Z" fill="#333333"/>
+                </svg>              
+            </button>
+            <a href="#" class="cancel">Cancel</a>            
+          </div>
+        </form>
+      </div>
+    </section>     
     <!-- Layout  -->
     <div class="layout">
       <div class="container">
@@ -674,6 +690,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
+            <h4>Contact Us</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 6L6 18" stroke="#85878B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -689,69 +706,55 @@
             <div class="form-group">
               <span class="secure-alert"><img src="img/lock.svg" alt="">Fill out secure contact form below</span>
               <form action="">
-                <div class="form-field invalid-field">
+                <div class="form-field">
                   <label for="">
-                    <span>First Name</span>
-                    <input type="text" placeholder="First Name">
+                      <span>First Name</span>
+                      <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="First Name" type="text" value="" class="input-validation-error">
                   </label>
-                  <div class="error-alert">
-                    <span>* Required field</span>
-                  </div>                  
+                  <span class="field-validation-error required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
                 </div>
                 <div class="form-field">
                   <label for="">
-                    <span>Last Name</span>
-                    <input type="text" placeholder="Last Name">
+                      <span>Last Name</span>
+                      <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Last Name" type="text" value="" class="">
                   </label>
-                  <div class="error-alert">
-                    <span>* Required field</span>
-                  </div>                  
-                </div>
+                  <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+                </div>                
                 <div class="form-field">
                   <label for="">
-                    <span>Company</span>
-                    <input type="text" placeholder="Company">
+                      <span>Company</span>
+                      <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Company" type="text" value="" class="">
                   </label>
-                  <div class="error-alert">
-                    <span>* Required field</span>
-                  </div>                  
-                </div>
+                  <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+                </div>                  
                 <div class="form-field">
                   <label for="">
-                    <span>Email</span>
-                    <input type="text" placeholder="Email">
+                      <span>Email</span>
+                      <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Email" type="text" value="" class="">
                   </label>
-                  <div class="error-alert">
-                    <span>* Required field</span>
-                  </div>                  
-                </div>
+                  <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+                </div>  
                 <div class="form-field">
                   <label for="">
-                    <span>Phone</span>
-                    <input type="text" placeholder="Phone">
+                      <span>Phone</span>
+                      <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Phone" type="text" value="" class="">
                   </label>
-                  <div class="error-alert">
-                    <span>* Required field</span>
-                  </div>                  
-                </div>
+                  <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+                </div>                 
                 <div class="form-field">
                   <label for="">
-                    <span>Zip</span>
-                    <input type="text" placeholder="Zip">
+                      <span>Zip</span>
+                      <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Zip" type="text" value="" class="">
                   </label>
-                  <div class="error-alert">
-                    <span>* Required field</span>
-                  </div>                  
-                </div>
+                  <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+                </div>                
                 <div class="form-field textarea-field">
                   <label for="">
-                    <span>How can we help</span>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
+                      <span>How can we help</span>
+                      <textarea name="" id="" cols="30" rows="10" placeholder="Description" class=""></textarea>
                   </label>
-                  <div class="error-alert">
-                    <span>* Required field</span>
-                  </div>                  
-                </div>
+                  <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+                </div>                   
                 <span class="reguired-field">*Required Field</span>
                 <div class="form-field checkbox-field">
                   <input type="checkbox" id="quote">
@@ -785,14 +788,29 @@
             <p>We will be in contact shortly to answer any questions that you<br> might have regarding your inquiry. </p>
           </div>
           <div class="modal-footer">
-            <label for="">
-              <span>Call Us Today</span>
-              <a href="tel:(916) 347-9828">(916) 347-9828</a>
-            </label>
-            <label for="">
-              <span>Email Us</span>
-              <a href="mailto:info@trucksite.com">info@trucksite.com</a>
-            </label>
+            <div class="contact-us">
+              <div class="icon">
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.2052 15.8275V18.7498C21.2063 19.021 21.1507 19.2896 21.0418 19.5381C20.9329 19.7867 20.7731 20.0098 20.5728 20.1932C20.3725 20.3766 20.1361 20.5162 19.8786 20.6032C19.6211 20.6901 19.3482 20.7223 19.0775 20.6979C16.0741 20.3722 13.1892 19.348 10.6545 17.7075C8.29625 16.2119 6.29688 14.2165 4.79837 11.863C3.14887 9.32179 2.12236 6.42856 1.80199 3.41767C1.7776 3.1483 1.80968 2.87682 1.89618 2.6205C1.98268 2.36418 2.1217 2.12865 2.30441 1.9289C2.48712 1.72914 2.7095 1.56954 2.95739 1.46026C3.20529 1.35098 3.47326 1.29442 3.74427 1.29416H6.67232C7.14599 1.28951 7.60519 1.45691 7.96434 1.76516C8.32348 2.07342 8.55806 2.50149 8.62436 2.96959C8.74794 3.90477 8.97714 4.823 9.30757 5.70676C9.43889 6.05541 9.46731 6.43432 9.38946 6.7986C9.31162 7.16287 9.13078 7.49724 8.86836 7.76208L7.62882 8.99917C9.01823 11.4378 11.0414 13.457 13.4849 14.8437L14.7245 13.6066C14.9898 13.3447 15.3249 13.1642 15.6899 13.0865C16.0549 13.0088 16.4345 13.0372 16.7839 13.1683C17.6694 13.498 18.5894 13.7268 19.5265 13.8501C20.0006 13.9169 20.4336 14.1552 20.7431 14.5198C21.0526 14.8844 21.2171 15.3498 21.2052 15.8275Z" stroke="#2356A5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <label for="">
+                <span>Call Us Today</span>
+                <a href="tel:(916) 347-9828">(916) 347-9828</a>
+              </label>              
+            </div>
+            <div class="contact-us">
+              <div class="icon">
+                <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.83329 4.33337H22.1666C23.3583 4.33337 24.3333 5.30837 24.3333 6.50004V19.5C24.3333 20.6917 23.3583 21.6667 22.1666 21.6667H4.83329C3.64163 21.6667 2.66663 20.6917 2.66663 19.5V6.50004C2.66663 5.30837 3.64163 4.33337 4.83329 4.33337Z" stroke="#2356A5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M24.3333 6.5L13.5 14.0833L2.66663 6.5" stroke="#2356A5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <label for="">
+                <span>Email Us</span>
+                <a href="mailto:info@trucksite.com">info@trucksite.com</a>
+              </label>              
+            </div>
           </div>
         </div>
       </div>

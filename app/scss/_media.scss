@@ -103,6 +103,13 @@
         }
         .categories__wrapper {
           display: none;
+          .more-categories-btn{
+            border-top:1px solid $light;
+            border-bottom:1px solid $light;
+          }
+          .more-categories{
+            border: unset;
+          }
         }
         .categories {
           display: flex;
@@ -161,6 +168,10 @@
           .trucks-results {
             margin-left: unset;
             margin: 15px 0 0 0;
+          }
+          .print_with_price{
+            margin-top: 10px;
+            margin-left: unset;
           }
         }
       }
@@ -249,6 +260,14 @@
             }
           }
         }
+      }
+    }
+  }
+  .search{
+    &__block{
+      form{
+        width: unset;
+        margin-right: 57px;
       }
     }
   }

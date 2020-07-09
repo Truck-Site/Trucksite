@@ -193,8 +193,16 @@ $(window).resize(function(){
 
 $('.more-categories-btn').on('click', function(e){
   e.preventDefault();
-  $('.more-categories').slideToggle();
+  var link = $(this);
+  $('.more-categories').slideToggle(function(){
+      if ($(this).is(":visible")) {
+        link.children('span').text('Less');
+      } else{
+        link.children('span').text('More');
+      }    
+  });
 });
+
 
 //Hide tables
     var table = $('.vehicle__tables figure .table-wrapper');
@@ -212,4 +220,13 @@ $('.more-categories-btn').on('click', function(e){
 
 // });
 
+
+// Search
+
+let sectionSearch = $('.search__block');
+let searchBtn = $('header .header__search');
+
+searchBtn.on('click',function(){
+  sectionSearch.slideToggle();
+});
 
