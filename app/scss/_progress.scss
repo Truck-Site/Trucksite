@@ -1,0 +1,8 @@
+.progress {
+  height: 10px;
+  border-radius: 6px;
+  &-bar {
+    border-radius: 6px;
+    background: $primary;
+  }
+}

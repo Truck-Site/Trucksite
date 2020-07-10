@@ -575,6 +575,55 @@
       }
     }
   }
+  #contactModal{
+    .modal{
+      &-body{
+        .vehicle-type{
+          flex-direction: column;
+          img{
+            width: 100%;
+            max-width: unset;
+            height: unset;
+          }
+          h2{
+            margin-top: 19px;
+            padding-left: unset;
+          }
+        }
+        .form-group{
+          form{
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+      &-footer{
+        flex-direction: column;
+        align-items: flex-start;
+        .wrap-btn{
+          margin-top: 20px;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          button{
+            width: 48%;
+          }
+        }
+      }
+    }    
+  }
+  #thanksModal{
+    .modal{
+      &-content{
+        padding:30px 20px;
+      }
+      &-header{
+        button{
+          top:-10px;
+          right:5px;
+        }
+      }
+    }    
+  }  
 }
 
 // Extra large devices (large desktops)

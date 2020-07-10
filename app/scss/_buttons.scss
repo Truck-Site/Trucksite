@@ -15,6 +15,12 @@
     &:focus{
         outline: none;
         box-shadow: unset;
+    }
+    &.disabled{
+        color:$light;
+        background: $gray;
+        pointer-events: none;
+        user-select: none;
     }    
 }
 

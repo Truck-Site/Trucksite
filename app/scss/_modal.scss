@@ -48,8 +48,34 @@
 }
 
 #contactModal {
+  .modal{
+    &-header{
+      margin-bottom: 20px;
+      h4{
+        font-size: 24px;
+        color:$dark;
+        font-weight: 500;
+        margin:unset;
+      }
+    }
+    &-footer{
+      .wrap-btn{
+
+        button{
+          margin:0 6px;
+          &.quaternary-btn{
+            margin-left: unset;
+          }
+          &.primary-btn{
+            margin-right: unset;
+          }          
+        }
+      }
+    }
+  }
   .vehicle-type {
     display: flex;
+    align-items: center;
     padding-bottom: 29px;
     margin-bottom: 29px;
     border-bottom: 1px solid $light;
@@ -196,6 +222,14 @@
   .modal {
     &-dialog {
       max-width: 545px;
+    }
+    &-header{
+      justify-content: flex-end;
+      button{
+        position: relative; 
+        top:-20px;
+        right:-20px;
+      }
     }
     &-body {
       text-align: center;

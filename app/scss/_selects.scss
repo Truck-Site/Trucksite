@@ -13,36 +13,48 @@
       &:focus {
         border: unset !important;
         outline: unset !important;
-        box-shadow: unset!important;
+        box-shadow: unset !important;
       }
       &:after {
         display: none;
       }
     }
-    .dropdown-menu{
+    .dropdown-menu {
       padding: unset;
-      li{
-        a{
+      li {
+        a {
           outline: none;
           padding: 0.25rem 0.5rem;
-          .text{
+          .text {
             font-size: 14px;
             font-weight: 400;
-            color:$dark;
+            color: $dark;
           }
-          &.active{
-            background: #F7F8FA;
-            .text{
-              color:$primary;
+          &.active {
+            background: #f7f8fa;
+            .text {
+              color: $primary;
             }
           }
-          &:hover{
-            background: #F7F8FA;
-            .text{
-              color:$primary;
-            }            
+          &:hover {
+            background: #f7f8fa;
+            .text {
+              color: $primary;
+            }
           }
         }
+      }
+    }
+    &.financial-field {
+      width: 100% !important;
+      button {
+        height: 58px;
+        border: 1px solid #cfd4da!important;
+        box-sizing: border-box;
+        border-radius: 6px;
+        &:after {
+          display: block;
+        }        
       }
     }
   }

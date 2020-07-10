@@ -1,0 +1,96 @@
+.financial {
+  &__application {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    .left {
+      padding-left: 100px;
+      .progress {
+        &__step {
+          .steps {
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 6px;
+            background: $light;
+            margin-top: 13px;
+          }
+        }
+      }
+    }
+    .right {
+      padding-right: 100px;
+      // .form-field{
+      //     width: 100%;
+      //     label{
+      //         width: 100%;
+      //         input{
+      //             width: 100%;
+      //             height: 58px;
+      //             border: 1px solid #cfd4da;
+      //             box-sizing: border-box;
+      //             border-radius: 6px;
+      //             outline: none;
+      //             padding-left: 18px;
+      //         }
+      //     }
+      // }
+      .form-field {
+        width: 100%;  
+        label {
+          width: 100%;
+          margin-bottom: 3px;
+          span {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 500;
+            color: $solid;
+            margin-bottom: 7px;
+            letter-spacing: -0.015em;
+          }
+          input {
+            height: 58px;
+            width: 100%;
+            border: 1px solid rgba($solid, 0.2);
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba($solid, 0.3);
+            box-sizing: border-box;
+            border-radius: 8px;
+            padding-left: 19px;
+            outline: none;
+          }
+          textarea {
+            width: 100%;
+            height: 82px;
+            border: 1px solid rgba($solid, 0.2);
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba($solid, 0.3);
+            box-sizing: border-box;
+            border-radius: 8px;
+            padding-left: 19px;
+            padding-top: 13px;
+            outline: none;
+            resize: unset;
+          }
+        }
+        span.required-field {
+          opacity: 0;
+          display: block;
+          font-size: 12px;
+          font-weight: 500;
+          color: $red;
+          margin-bottom: 5px;
+        }
+        .input-validation-error {
+          border-color: $red;
+        }
+        .field-validation-error {
+          color: $red;
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+}
