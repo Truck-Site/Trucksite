@@ -424,33 +424,39 @@
             position:absolute;
             top:20px;
             left:-10px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 8px 15px;
-            border-radius: 6px;
-            background: $red;
-            text-decoration: none;
-            transition:0.3s;
-            outline: none;
-            &:hover{
-              background: darken($red, 10%);
-            }
-            svg{
-              width: 24px;
-              height: 24px;
-              path{
-                fill:$white;
+            display: flex;
+            flex-direction: column;
+            a{
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;              
+              padding: 8px 15px;
+              border-radius: 6px;
+              background: $red;
+              text-decoration: none;
+              transition:0.3s;
+              outline: none;
+              margin-bottom: 5px;              
+              &:hover{
+                background: darken($red, 10%);
               }
+              svg{
+                width: 24px;
+                height: 24px;
+                path{
+                  fill:$white;
+                }
+              }
+              span{
+                display: inline-block;
+                font-size: 12px;
+                line-height: 1.1;
+                font-weight: 700;
+                color:$white;
+                margin-left: 5px;
+              }              
             }
-            span{
-              display: inline-block;
-              font-size: 12px;
-              line-height: 1.1;
-              font-weight: 700;
-              color:$white;
-              margin-left: 5px;
-            }
+
           }
         }
       }

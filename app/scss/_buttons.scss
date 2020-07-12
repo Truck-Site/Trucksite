@@ -61,7 +61,7 @@
     color:$primary;
     transition:0.3s;
     &:hover{
-        background-color: $primary;
+        background-color: darken($light, 5%);
         color:$white;
     }
 }

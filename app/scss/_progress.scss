@@ -1,8 +1,19 @@
 .progress {
   height: 10px;
   border-radius: 6px;
+  background: $light;
   &-bar {
     border-radius: 6px;
     background: $primary;
+    transition: 5s;
   }
 }
+
+$steps:8;
+
+@for $i from 1 through $steps{
+  $stepsWith:($i *(100/$steps));
+  .progress-bar[data-step="#{$i}"]{
+    width: $stepsWith*1%;
+  }
+}  

@@ -3,6 +3,9 @@
     width: auto !important;
     button {
       padding: unset;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
       color: $primary !important;
       background-color: unset !important;
       border: unset !important;
@@ -29,6 +32,7 @@
             font-size: 14px;
             font-weight: 400;
             color: $dark;
+            margin: unset;
           }
           &.active {
             background: #f7f8fa;
@@ -49,12 +53,52 @@
       width: 100% !important;
       button {
         height: 58px;
-        border: 1px solid #cfd4da!important;
+        border: 1px solid #cfd4da !important;
         box-sizing: border-box;
         border-radius: 6px;
         &:after {
           display: block;
-        }        
+          border: unset;
+          margin-left: 10px;
+          margin-right: 19px;
+          content: url("../img/union.svg");
+        }
+        .filter-option {
+          display: flex;
+          align-items: center;
+          padding-left: 19px;
+          .filter-option-inner-inner {
+            white-space: normal;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba($solid, 0.3);
+          }
+        }
+      }
+      .dropdown-menu {
+        padding: unset;
+        li {
+          a {
+            .text {
+              font-size: 16px;
+              font-weight: 400;
+              color: $dark;
+              margin: unset;
+            }
+            &.active {
+              background: #f7f8fa;
+              .text {
+                color: $primary;
+              }
+            }
+            &:hover {
+              background: #f7f8fa;
+              .text {
+                color: $primary;
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -62,6 +62,16 @@
         }
       }
     }
+    .financial{
+      &__application{
+        .left{
+          padding-left: unset;
+        }
+        .right{
+          padding-right: unset;
+        }
+      }
+    }
   }
   footer {
     .footer {
@@ -174,6 +184,11 @@
             margin-left: unset;
           }
         }
+      }
+    }
+    .financial{
+      &__application{
+        grid-column-gap: 30px;
       }
     }
   }
@@ -410,6 +425,15 @@
               }
             }
           }
+        }
+      }
+    }
+    .financial{
+      &__application{
+        display: flex;
+        flex-direction: column;
+        .left{
+          margin-bottom: 25px;
         }
       }
     }

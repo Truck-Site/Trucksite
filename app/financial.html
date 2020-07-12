@@ -72,7 +72,7 @@
             <p>Give us details about your equipment.</p>
             <div class="progress__step">
               <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-step="1"></div>
               </div>
               <span class="steps">Step 1 of 8</span>
             </div>
@@ -91,9 +91,9 @@
               </div>               
               <div class="form-field">
                 <label for="">
-                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Equipment Year" type="text" value="" class="">
+                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Equipment Year" type="text" value="" class="input-validation-error">
                 </label>
-                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+                <span class="field-validation-error required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
               </div>              
               <div class="form-field">
                 <label for="">
@@ -107,9 +107,9 @@
                 </label>
                 <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
               </div>
-              <div class="form-group text-right">
+              <div class="form-btn-group">
                 <button type="button" class="btn secondary-btn next">Next</button>
-            </div>              
+              </div>              
             </form>
           </div>
         </div>
@@ -121,14 +121,13 @@
             <p>Tell us about your financing needs.</p>
             <div class="progress__step">
               <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-step="2"></div>
               </div>
               <span class="steps">Step 2 of 8</span>
             </div>
           </div>
           <div class="right">
             <form action="">
-              
               <div class="form-field">
                 <label for="">
                     <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Invoice Amount" type="text" value="" class="">
@@ -157,7 +156,7 @@
                 </label>
                 <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
               </div>               
-              <div class="form-group text-right">
+              <div class="form-btn-group">
                 <button type="button" class="btn quaternary-btn prev">Prev</button>
                 <button type="button" class="btn secondary-btn next">Next</button>
             </div>              
@@ -171,7 +170,7 @@
             <h3>Tell us about yourself</h3>
             <div class="progress__step">
               <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-step="3"></div>
               </div>
               <span class="steps">Step 3 of 8</span>
             </div>
@@ -209,26 +208,241 @@
                 <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
               </div>                            
               <div class="form-field">
-                <label for="">
-                    <select name="" id="" class="selectpicker financial-field">
-                      <option value="">When are you planning to purchase your equipment?</option>
-                      <option value="">When are you planning to purchase your equipment? 2</option>
-                      <option value="">When are you planning to purchase your equipment? 3</option>
-                    </select>
-                </label>
-                <label for="">
-                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Requested Loan Amount" type="text" value="" class="">
-                </label>                
+                <div class="double-fields">
+                  <label for="">
+                      <select name="" id="" class="selectpicker financial-field">
+                        <option value="">State</option>
+                        <option value="">State 2</option>
+                        <option value="">State 3</option>
+                      </select>
+                  </label>
+                  <label for="">
+                      <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Zip Code" type="text" value="" class="">
+                  </label>                    
+                </div>
                 <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
               </div>               
-              <div class="form-group text-right">
+              <div class="form-btn-group">
                 <button type="button" class="btn quaternary-btn prev">Prev</button>
                 <button type="button" class="btn secondary-btn next">Next</button>
             </div>              
             </form>
           </div>
         </div>
-      </div>            
+      </div>
+      <div class="container">
+        <div class="financial__application">
+          <div class="left">
+            <h3>Verify your identity</h3>
+            <div class="progress__step">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-step="4"></div>
+              </div>
+              <span class="steps">Step 4 of 8</span>
+            </div>
+          </div>
+          <div class="right">
+            <form action="">
+              <div class="form-field">
+                <label for="">
+                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Immigration Status" type="text" value="" class="">
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>              
+              <div class="form-field">
+                <label for="">
+                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Social Security Number" type="text" value="" class="">
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>        
+              <div class="form-btn-group">
+                <button type="button" class="btn quaternary-btn prev">Prev</button>
+                <button type="button" class="btn secondary-btn next">Next</button>
+            </div>              
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="financial__application">
+          <div class="left">
+            <h3>Choose your loan type</h3>
+            <p>Please choose your loan type.</p>
+            <div class="progress__step">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-step="5"></div>
+              </div>
+              <span class="steps">Step 5 of 8</span>
+            </div>
+          </div>
+          <div class="right">
+            <form action="">
+              <div class="form-field">
+                <div class="loan__type">
+                  <input type="radio" name="loan_type" id="commercial" checked>
+                  <label for="commercial">
+                    <div>
+                      <span>Commercial</span>
+                      <p>Business Use</p>
+                    </div>
+                  </label>
+                  <input type="radio" name="loan_type" id="consumer">
+                  <label for="consumer">
+                    <div>
+                      <span>Consumer</span>
+                      <p>Personal Use</p>
+                    </div>
+                  </label>                                     
+                </div>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>                    
+              <div class="form-btn-group">
+                <button type="button" class="btn quaternary-btn prev">Prev</button>
+                <button type="button" class="btn secondary-btn next">Next</button>
+            </div>              
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="financial__application">
+          <div class="left">
+            <h3>Current residence information</h3>
+            <p>When did you move into your current residence?</p>
+            <div class="progress__step">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-step="6"></div>
+              </div>
+              <span class="steps">Step 6 of 8</span>
+            </div>
+          </div>
+          <div class="right">
+            <form action="">
+              <div class="form-field">
+                <label for="">
+                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Month" type="text" value="" class="">
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>              
+              <div class="form-field">
+                <label for="">
+                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Year" type="text" value="" class="">
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>
+              <div class="form-field">
+                <label for="">
+                    <select name="" id="" class="selectpicker financial-field">
+                      <option value="">Own</option>
+                      <option value="">Own 2</option>
+                      <option value="">Own 3</option>
+                    </select>
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>               
+              <div class="form-field">
+                <label for="">
+                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Monthly Payment" type="text" value="" class="">
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>
+              <div class="form-btn-group">
+                <button type="button" class="btn quaternary-btn prev">Prev</button>
+                <button type="button" class="btn secondary-btn next">Next</button>
+            </div>              
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="financial__application">
+          <div class="left">
+            <h3>Tell us about your employment</h3>
+            <p>Please tell us about your employment.</p>
+            <div class="progress__step">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-step="7"></div>
+              </div>
+              <span class="steps">Step 7 of 8</span>
+            </div>
+          </div>
+          <div class="right">
+            <form action="">
+              <div class="form-field">
+                <label for="">
+                    <select name="" id="" class="selectpicker financial-field">
+                      <option value="">Select Status</option>
+                      <option value="">Select Status 2</option>
+                      <option value="">Select Status 3</option>
+                    </select>
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>               
+              <div class="form-field">
+                <label for="">
+                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Gross Monthly Income" type="text" value="" class="">
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>              
+              <div class="form-field">
+                <label for="">
+                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Other Monthly Income" type="text" value="" class="">
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>
+              <div class="form-btn-group">
+                <button type="button" class="btn quaternary-btn prev">Prev</button>
+                <button type="button" class="btn secondary-btn next">Next</button>
+            </div>              
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="financial__application">
+          <div class="left">
+            <h3>Credit Inquiry Authorization</h3>
+            <p>The Signature authorizes TRUCK SITE and outside finance companies to obtain any and all credit information necessary to process my/our loan application, including but not limited to, information concerning my/our savings and checking deposits, any of my/our loan credit histories.</p>
+            <div class="progress__step">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-step="8"></div>
+              </div>
+              <span class="steps">Step 8 of 8</span>
+            </div>
+          </div>
+          <div class="right">
+            <form action="">              
+              <div class="form-field">
+                <label for="">
+                    <input data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Gross Monthly Income" type="text" value="" class="">
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>              
+              <div class="form-field">
+                <label for="">
+                    <input disabled data-val="true" data-val-email="The SenderEmail field is not a valid e-mail address." data-val-required="The SenderEmail field is required." id="SenderEmail" name="SenderEmail" placeholder="Other Monthly Income" type="text" value="" class="">
+                </label>
+                <span class="required-field" data-valmsg-for="SenderEmail" data-valmsg-replace="true"><span for="SenderEmail" class="">The SenderEmail field is required.</span></span>
+              </div>
+              <div class="form-btn-group">
+                <button type="button" class="btn quaternary-btn prev">Prev</button>
+                <button type="button" class="btn primary-btn done">Done</button>
+            </div>              
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="financial__application layout-thanks">
+          <div class="icon">
+            <img src="img/check-circle.svg" alt="">
+          </div>
+          <h2>Thank You!</h2>
+          <p>Your Application Is Being Reviewed.<br> 
+            We will contact you once we process your application.</p>
+          <a href="#" class="btn primary-btn">Back to home page</a>
+        </div>
+      </div>                                          
     </div>
     <!-- Footer   -->
     <footer class="index__footer">
